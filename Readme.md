@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Самойлов](https://up.htmlacademy.ru/htmlcss/21/user/587225).
-* Наставник: `Неизвестно`.
+* Наставник: [Георгий Гусаков](https://htmlacademy.ru/profile/georgegus27)
 
 ---
 
