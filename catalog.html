@@ -6,11 +6,11 @@
 </head>
 <body>
 	<header class="main-header">
-		<a class="header-logo"><img src="http://placehold.it/150x100" width="150" height="100" alt="DEVICE"></a>
+		<a class="header-logo" href="index.html"><img src="http://placehold.it/150x100" width="150" height="100" alt="DEVICE"></a>
 		<div class="header-user-action">
 			<form class="header-search" action="#" method="get">
-				<label for="search"><input id="search" type="search" name="search" class="search-area" placeholder="Поиск по сайту"></label>
-				<button class="search_button">Найти</button>
+				<label class="search-area-label"><input id="search" type="search" name="search" class="search-area" placeholder="Поиск по сайту"></label>
+				<button class="search-button">Найти</button>
 			</form>
 			<ul class="header-action-list">
 				<li class="header-action-item"><a href="#">Валентин Петухов</a></li>
@@ -21,8 +21,8 @@
 		</div>
 		<nav class="header-nav">
 			<div class="header-catalog">
-				<ul class="header-catalog-dropdown">
-					<li class="dropdown-item"><a href="#" class="header-catalog-dropdown-list">Католог товаров</a></li>
+				<a href="catalog.html" class="catalog-title">Каталог товаров</a>
+				<ul class="dropdown">
 					<li class="dropdown-item">
 						<ul class="header-catalog-list">
 							<li class="header-catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
@@ -56,8 +56,8 @@
 		<h1 class="catalog-title">Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
 			<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
-			<li class="breadcrumbs-item"><a href="#">Каталог товаров</a></li>
-			<li class="breadcrumbs-item"><a href="#">Моноподы для селфи</a></li>
+			<li class="breadcrumbs-item"><a href="catalog.html">Каталог товаров</a></li>
+			<li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
 		</ul>
 		<section class="catalog-filter">
 			<h2 class="visually hidden">Фильтр каталога</h2>
@@ -80,7 +80,7 @@
 					<a href="#">В корзину</a>
 					<a href="#">Добавить к сравнению</a>
 					<figcaption>
-						<p>Любительская селфи-палка</p>
+						<a href="catalog.html/amateur-selfi-stick">Любительская селфи-палка</a>
 						<p>500 руб.</p>
 					</figcaption>
 				</figure>
@@ -89,7 +89,7 @@
 					<a href="#">В корзину</a>
 					<a href="#">Добавить к сравнению</a>
 					<figcaption>
-						<p>Профессиональная селфи-палка</p>
+						<a href="catalog.html/professional-selfi-stick">Профессиональная селфи-палка</a>
 						<p>1 500 руб</p>
 					</figcaption>
 				</figure>
@@ -98,7 +98,7 @@
 					<a href="#">В корзину</a>
 					<a href="#">Добавить к сравнению</a>
 					<figcaption>
-						<p>Непотопляемая селфи-палка</p>
+						<a href="catalog.html/unsinkable-selfi-stick">Непотопляемая селфи-палка</a>
 						<p>2 500 руб.</p>
 					</figcaption>
 				</figure>
@@ -107,13 +107,13 @@
 					<a href="#">В корзину</a>
 					<a href="#">Добавить к сравнению</a>
 					<figcaption>
-						<p>Селфи-палка «Следуй за мной»</p>
+						<a href="catalog.html/follow-me-selfi-stick">Селфи-палка «Следуй за мной»</a>
 						<p>4 900 руб.</p>
 					</figcaption>
 				</figure>
 				<div class="showcase-pagination">
-					<a href="#">Назад</a>
-					<a href="#">1</a>
+					<a>Назад</a>
+					<a>1</a>
 					<a href="#">2</a>
 					<a href="#">3</a>
 					<a href="#">Вперед</a>
@@ -122,30 +122,30 @@
 		</section>
 	</main>
 	<footer class="main-footer">
-		<div class="footer-left">
-			<a class="footer-logo"><img src="http://placehold.it/150x100" width="150" height="100" alt="DEVICE"></a>
-			<p>г. Москва, ул. Строителей, 15</p>		
-		</div>
-		<div class="footer-middle">
-			<ul class="footer-features-list">
-				<li class="footer-features-item"><a href="#">Доставка</a></li>
-				<li class="footer-features-item"><a href="#">Гарантия</a></li>
-				<li class="footer-features-item"><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="footer-social-list">
-				<li class="footer-social-item"><a href="#">Facebook</a></li>
-				<li class="footer-social-item"><a href="#">Instagram</a></li>
-				<li class="footer-social-item"><a href="#">Twitter</a></li>
-			</ul>
-		</div>
-		<div class="footer-right">
+		<div class="footer-top">
+			<a class="footer-logo" href="index.html"><img src="http://placehold.it/150x100" width="150" height="100" alt="DEVICE"></a>
 			<ul class="footer-action-list">
 				<li class="footer-action-item"><a href="#">Валентин Петухов</a></li>
 				<li class="footer-action-item"><a href="#">Выйти</a></li>
 				<li class="footer-action-item"><a href="#">Сравнить</a></li>
 				<li class="footer-action-item"><a href="#">Корзина</a></li>
 			</ul>
+		</div>
+		<div class="footer-middle">
+			<p>г. Москва, ул. Строителей, 15</p>
+			<ul class="footer-features-list">
+				<li class="footer-features-item"><a href="#">Доставка</a></li>
+				<li class="footer-features-item"><a href="#">Гарантия</a></li>
+				<li class="footer-features-item"><a href="#">Контакты</a></li>
+			</ul>
 			<p>Тел.: +7 (495) 495-95-95</p>
+		</div>
+		<div class="footer-bottom">
+			<ul class="footer-social-list">
+				<li class="footer-social-item"><a href="#">Facebook</a></li>
+				<li class="footer-social-item"><a href="#">Instagram</a></li>
+				<li class="footer-social-item"><a href="#">Twitter</a></li>
+			</ul>
 			<a href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="http://placehold.it/150x100" width="150" height="100" alt="Профессиональный HTML и CSS, уровень 1">
 			</a>

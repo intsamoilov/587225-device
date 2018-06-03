@@ -6,11 +6,11 @@
 </head>
 <body>
 	<header class="main-header">
-		<a class="header-logo"><img src="http://placehold.it/150x100" width="150" height="100" alt="DEVICE"></a>
+		<span class="header-logo"><img src="http://placehold.it/150x100" width="150" height="100" alt="DEVICE"></span>
 		<div class="header-user-action">
 			<form class="header-search" action="#" method="get">
-				<label for="search"><input id="search" type="search" name="search" class="search-area" placeholder="Поиск по сайту"></label>
-				<button class="search_button">Найти</button>
+				<label class="search-area-label"><input id="search" type="search" name="search" class="search-area" placeholder="Поиск по сайту"></label>
+				<button class="search-button">Найти</button>
 			</form>
 			<ul class="header-action-list">
 				<li class="header-action-item"><a href="#">Войти</a></li>
@@ -20,8 +20,8 @@
 		</div>
 		<nav class="header-nav">
 			<div class="header-catalog">
-				<ul class="header-catalog-dropdown">
-					<li class="dropdown-item"><a href="#" class="header-catalog-dropdown-list">Католог товаров</a></li>
+				<a href="catalog.html" class="catalog-title">Каталог товаров</a>
+				<ul class="dropdown">
 					<li class="dropdown-item">
 						<ul class="header-catalog-list">
 							<li class="header-catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
@@ -58,53 +58,60 @@
 			<input type="radio" id="slider-btn-1" name="slider-btn" checked>
 			<input type="radio" id="slider-btn-2" name="slider-btn">
 			<input type="radio" id="slider-btn-3" name="slider-btn">
-			<div class="slide-1">
-				<img src="http://placehold.it/150x100" width="150" height="100" alt="Палка для селфи">
-				<p><b>Делай селфи,<br> как Бен Стиллер!</b></p>
-				<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-				<a class="button" href="#">Подробнее</a>
-				<table class="slider-info">
-					<tr>
-						<th>Длина палки</th>
-						<th>Вес палки</th>
-						<th>Материал</th>
-					</tr>
-					<tr>
-						<td>8,5 м</td>
-						<td>5 кг</td>
-						<td>Карбон</td>
-					</tr>
-				</table>
+			<div class="slider-switches">
+				<label for="slider-btn-1"></label>
+				<label for="slider-btn-2"></label>
+				<label for="slider-btn-3"></label>
 			</div>
-			<div class="slide-2">
-				<img src="http://placehold.it/150x100" width="150" height="100" alt="Фитнес-браслет">
-				<p><b>Худеем<br> правильно!</b></p>
-				<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-				<a class="button" href="#">Подробнее</a>
-				<table class="slider-info">
-					<tr>
-						<th>Без подзарядки</th>
-					</tr>
-					<tr>
-						<td>48 часов</td>
-					</tr>
-				</table>
-			</div>
-			<div class="slide-3">
-				<img src="http://placehold.it/150x100" width="150" height="100" alt="Квадрокоптер">
-				<p><b>Порхает как бабочка,<br> жалит как пчела!</b></p>
-				<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-				<a class="button" href="#">Подробнее</a>
-				<table class="slider-info">
-					<tr>
-						<th>Дальность полета</th>
-						<th>Радиус поражения</th>
-					</tr>
-					<tr>
-						<td>800 м</td>
-						<td>50 м</td>
-					</tr>
-				</table>
+			<div class="slides">
+				<div class="slide slide-1">
+					<img src="http://placehold.it/150x100" width="150" height="100" alt="Палка для селфи">
+					<p><b>Делай селфи,<br> как Бен Стиллер!</b></p>
+					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<a class="button" href="#">Подробнее</a>
+					<table class="slider-info">
+						<tr>
+							<th>Длина палки</th>
+							<th>Вес палки</th>
+							<th>Материал</th>
+						</tr>
+						<tr>
+							<td>8,5 м</td>
+							<td>5 кг</td>
+							<td>Карбон</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide slide-2">
+					<img src="http://placehold.it/150x100" width="150" height="100" alt="Фитнес-браслет">
+					<p><b>Худеем<br> правильно!</b></p>
+					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+					<a class="button" href="#">Подробнее</a>
+					<table class="slider-info">
+						<tr>
+							<th>Без подзарядки</th>
+						</tr>
+						<tr>
+							<td>48 часов</td>
+						</tr>
+					</table>
+				</div>
+				<div class="slide  slide-3">
+					<img src="http://placehold.it/150x100" width="150" height="100" alt="Квадрокоптер">
+					<p><b>Порхает как бабочка,<br> жалит как пчела!</b></p>
+					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+					<a class="button" href="#">Подробнее</a>
+					<table class="slider-info">
+						<tr>
+							<th>Дальность полета</th>
+							<th>Радиус поражения</th>
+						</tr>
+						<tr>
+							<td>800 м</td>
+							<td>50 м</td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</section>
 		<section class="main-catalog">
@@ -207,33 +214,43 @@
 		</section>
 	</main>
 	<footer class="main-footer">
-		<div class="footer-left">
-			<a class="footer-logo"><img src="http://placehold.it/150x100" width="150" height="100" alt="DEVICE"></a>
-			<p>г. Москва, ул. Строителей, 15</p>		
-		</div>
-		<div class="footer-middle">
-			<ul class="footer-features-list">
-				<li class="footer-features-item"><a href="#">Доставка</a></li>
-				<li class="footer-features-item"><a href="#">Гарантия</a></li>
-				<li class="footer-features-item"><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="footer-social-list">
-				<li class="footer-social-item"><a href="#">Facebook</a></li>
-				<li class="footer-social-item"><a href="#">Instagram</a></li>
-				<li class="footer-social-item"><a href="#">Twitter</a></li>
-			</ul>
-		</div>
-		<div class="footer-right">
+		<div class="footer-top">
+			<span class="footer-logo"><img src="http://placehold.it/150x100" width="150" height="100" alt="DEVICE"></span>
 			<ul class="footer-action-list">
 				<li class="footer-action-item"><a href="#">Войти</a></li>
 				<li class="footer-action-item"><a href="#">Сравнить</a></li>
 				<li class="footer-action-item"><a href="#">Корзина</a></li>
 			</ul>
+		</div>
+		<div class="footer-middle">
+			<p>г. Москва, ул. Строителей, 15</p>
+			<ul class="footer-features-list">
+				<li class="footer-features-item"><a href="#">Доставка</a></li>
+				<li class="footer-features-item"><a href="#">Гарантия</a></li>
+				<li class="footer-features-item"><a href="#">Контакты</a></li>
+			</ul>
 			<p>Тел.: +7 (495) 495-95-95</p>
+		</div>
+		<div class="footer-bottom">
+			<ul class="footer-social-list">
+				<li class="footer-social-item"><a href="#">Facebook</a></li>
+				<li class="footer-social-item"><a href="#">Instagram</a></li>
+				<li class="footer-social-item"><a href="#">Twitter</a></li>
+			</ul>
 			<a href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="http://placehold.it/150x100" width="150" height="100" alt="Профессиональный HTML и CSS, уровень 1">
 			</a>
 		</div>
 	</footer>
+	<section class="modal modal-form">
+		<h2 class="visually-hidden">Форма обратной связи</h2>
+		<form></form>
+		<span class="modal-close">x</span>
+	</section>
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">Мы на карте</h2>
+		<img src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
+		<span class="modal-close">x</span>
+	</section>
 </body>
 </html>
