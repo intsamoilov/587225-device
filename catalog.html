@@ -81,7 +81,45 @@
 		<section class="catalog-filter">
 			<h2 class="visually hidden">Фильтр каталога</h2>
 			<p>Фильтр:</p>
-			<form></form>
+			<form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
+				<fieldset class="filter-area">
+					<legend class="filter-area-title">Стоимость</legend>
+					<label class="min-range">от 0</label>
+					<label class="max-range">до 5000</label>
+				</fieldset>
+				<fieldset class="filter-area">
+					<legend class="filter-area-title">Цвет</legend>
+					<ul class="color-list">
+						<li class="color-item">
+							<label class="color-label"><input class="visually-hidden" type="checkbox" name="black" checked>Черный</label>
+						</li>
+						<li class="color-item">
+							<label class="color-label"><input class="visually-hidden" type="checkbox" name="white" >Белый</label>
+						</li>
+						<li class="color-item">
+							<label class="color-label"><input class="visually-hidden" type="checkbox" name="blue" checked>Синий</label>
+						</li>
+						<li class="color-item">
+							<label class="color-label"><input class="visually-hidden" type="checkbox" name="red" checked>Красный</label>
+						</li>
+						<li class="color-item">
+							<label class="color-label"><input class="visually-hidden" type="checkbox" name="pink" >Розовый</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="filter-area">
+					<legend class="filter-area-title">Bluetooth</legend>
+					<ul class="bluetooth-list">
+						<li class="bluetooth-item">
+							<label class="bluetooth-label"><input class="visually-hidden" type="radio" name="Bluetooth" value="true" checked>Есть</label>
+						</li>
+						<li class="bluetooth-item">
+							<label class="bluetooth-label"><input class="visually-hidden" type="radio" name="Bluetooth" value="false">Нет</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="button-show">Показать</button>
+			</form>
 		</section>
 		<section class="showcase">
 			<h2 class="visually hidden">Страница каталога</h2>
@@ -91,13 +129,15 @@
 					<li class="showcase-sort-item"><a href="#">По цене</a></li>
 					<li class="showcase-sort-item"><a href="#">По типу</a></li>
 					<li class="showcase-sort-item"><a href="#">По популярности</a></li>
+					<li class="showcase-sort-item"><a href="#">По возрастанию</a></li>
+					<li class="showcase-sort-item"><a href="#">По убыванию</a></li>
 				</ul>
 			</div>
 			<div class="showcase-show">
 				<figure class="show-item">
 					<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-					<a href="#">В корзину</a>
-					<a href="#">Добавить к сравнению</a>
+					<button class="btn-cart" type="button">В корзину</button>
+					<button class="btn-compare" type="button">Добавить к сравнению</button>
 					<figcaption>
 						<a href="catalog.html/amateur-selfi-stick">Любительская селфи-палка</a>
 						<p>500 руб.</p>
@@ -105,8 +145,8 @@
 				</figure>
 				<figure class="show-item">
 					<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-					<a href="#">В корзину</a>
-					<a href="#">Добавить к сравнению</a>
+					<button class="btn-cart" type="button">В корзину</button>
+					<button class="btn-compare" type="button">Добавить к сравнению</button>
 					<figcaption>
 						<a href="catalog.html/professional-selfi-stick">Профессиональная селфи-палка</a>
 						<p>1 500 руб</p>
@@ -114,8 +154,8 @@
 				</figure>
 				<figure class="show-item">
 					<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-					<a href="#">В корзину</a>
-					<a href="#">Добавить к сравнению</a>
+					<button class="btn-cart" type="button">В корзину</button>
+					<button class="btn-compare" type="button">Добавить к сравнению</button>
 					<figcaption>
 						<a href="catalog.html/unsinkable-selfi-stick">Непотопляемая селфи-палка</a>
 						<p>2 500 руб.</p>
@@ -123,8 +163,8 @@
 				</figure>
 				<figure class="show-item">
 					<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-					<a href="#">В корзину</a>
-					<a href="#">Добавить к сравнению</a>
+					<button class="btn-cart" type="button">В корзину</button>
+					<button class="btn-compare" type="button">Добавить к сравнению</button>
 					<figcaption>
 						<a href="catalog.html/follow-me-selfi-stick">Селфи-палка «Следуй за мной»</a>
 						<p>4 900 руб.</p>
