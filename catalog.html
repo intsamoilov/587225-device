@@ -84,8 +84,18 @@
 			<form class="filter-form" method="post" action="https://echo.htmlacademy.ru">
 				<fieldset class="filter-area">
 					<legend class="filter-area-title">Стоимость</legend>
-					<label class="min-range">от 0</label>
-					<label class="max-range">до 5000</label>
+					<div class="range">
+						<div class="range-field">
+							<div class="colorized field">
+								<div class="min-control">
+									<label class="min-label">от<input class="min-value" type="number" name="min" value="0"></label>
+								</div>
+								<div class="max-control">
+									<label class="max-label">до<input class="max-value" type="number" name="max" value="5000"></label>
+								</div>
+							</div>
+						</div>
+					</div>
 				</fieldset>
 				<fieldset class="filter-area">
 					<legend class="filter-area-title">Цвет</legend>
@@ -118,7 +128,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button class="button-show">Показать</button>
+				<button class="button-show" type="submit">Показать</button>
 			</form>
 		</section>
 		<section class="showcase">
@@ -136,39 +146,47 @@
 			<div class="showcase-show">
 				<figure class="show-item">
 					<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-					<button class="btn-cart" type="button">В корзину</button>
-					<button class="btn-compare" type="button">Добавить к сравнению</button>
 					<figcaption>
 						<a href="catalog.html/amateur-selfi-stick">Любительская селфи-палка</a>
 						<p>500 руб.</p>
 					</figcaption>
+					<div class="show-item-buttons">
+						<button class="btn-cart" type="button">В корзину</button>
+						<button class="btn-compare" type="button">Добавить к сравнению</button>
+					</div>
 				</figure>
 				<figure class="show-item">
 					<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-					<button class="btn-cart" type="button">В корзину</button>
-					<button class="btn-compare" type="button">Добавить к сравнению</button>
 					<figcaption>
 						<a href="catalog.html/professional-selfi-stick">Профессиональная селфи-палка</a>
 						<p>1 500 руб</p>
 					</figcaption>
+					<div class="show-item-buttons">
+						<button class="btn-cart" type="button">В корзину</button>
+						<button class="btn-compare" type="button">Добавить к сравнению</button>
+					</div>
 				</figure>
 				<figure class="show-item">
 					<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-					<button class="btn-cart" type="button">В корзину</button>
-					<button class="btn-compare" type="button">Добавить к сравнению</button>
 					<figcaption>
 						<a href="catalog.html/unsinkable-selfi-stick">Непотопляемая селфи-палка</a>
 						<p>2 500 руб.</p>
 					</figcaption>
+					<div class="show-item-buttons">
+						<button class="btn-cart" type="button">В корзину</button>
+						<button class="btn-compare" type="button">Добавить к сравнению</button>
+					</div>
 				</figure>
 				<figure class="show-item">
 					<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-					<button class="btn-cart" type="button">В корзину</button>
-					<button class="btn-compare" type="button">Добавить к сравнению</button>
 					<figcaption>
 						<a href="catalog.html/follow-me-selfi-stick">Селфи-палка «Следуй за мной»</a>
 						<p>4 900 руб.</p>
 					</figcaption>
+					<div class="show-item-buttons">
+						<button class="btn-cart" type="button">В корзину</button>
+						<button class="btn-compare" type="button">Добавить к сравнению</button>
+					</div>
 				</figure>
 				<div class="showcase-pagination">
 					<a>Назад</a>
