@@ -1,0 +1,490 @@
+/*** Нестандартные шрифты
+============================================================*/
+@font-face {
+	font-family: "Gilroy Light";
+	src: local("Gilroy Light"),
+		url("../fonts/gilroylight.woff"),
+		url("../fonts/gilroylight.woff2");
+}
+
+@font-face {
+	font-family: "Gilroy Extrabold";
+	src: local("Gilroy Extrabold"),
+		url("../fonts/gilroyextrabold.woff"),
+		url("../fonts/gilroyextrabold.woff2");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: local("Open Sans"),
+		url("../fonts/opensans.woff"),
+		url("../fonts/opensans.woff2");
+}
+
+@font-face {
+	font-family: "Open Sans Light";
+	src: local("Open Sans Light"),
+		url("../fonts/opensanslight.woff"),
+		url("../fonts/opensanslight.woff2");
+}
+
+
+
+/*** Общие правила
+============================================================*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #464646;
+	background-color: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+
+
+
+/*** Кнопки
+========================*/
+.button {
+	color: black;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+	border: none;
+	background-color: #f0c52e;
+}
+.button:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+.services-btn:active,
+.selected {
+	color: #f7e184;
+	background-color: #000000;
+}
+
+
+
+/*** Шапка
+========================*/
+.main-header {
+	background-color: #f7e296;
+}
+.main-header ul {
+	list-style: none;
+}
+.main-header a {
+	color: #000000;
+}
+.header-logo-link:hover,
+.header-logo-link:focus,
+.main-header a:hover,
+.main-header a:focus,
+.header-action-item:hover,
+.header-action-item:focus {
+	opacity: 0.6;
+}
+.header-logo-link:active,
+.main-header a:active,
+.header-action-item:active {
+	opacity: 0.3;
+}
+.search-area {
+	border: none;
+	color: #000000;
+	background-color: transparent;
+}
+.search-area:-ms-input-placeholder {
+	opacity: 0.3;
+}
+.search-area::placeholder {
+	opacity: 0.3;
+}
+.search-area:hover:-ms-input-placeholder {
+	opacity: 0.6;
+}
+.search-area:hover::placeholder {
+	opacity: 0.6;
+}
+.search-area:focus:-ms-input-placeholder {
+	opacity: 1;
+}
+.search-area:focus::placeholder {
+	opacity: 1;
+}
+.search-area:focus, 
+.search-area:active,
+.search-area-label:focus,
+.search-area-label:active {
+	border-bottom: 2px solid #000000;
+}
+.search-button {
+	border: 2px solid #000000;
+	background-color: transparent;
+}
+.search-button:hover,
+.search-button:focus {
+	color: #ffffff;
+	background-color: #000000;
+}
+.search-button:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+.header-nav {
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.dropdown {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	text-transform: none;
+}
+
+
+
+/*** Подвал
+========================*/
+.main-footer {
+	color: #ffffff;
+	background-color: #464646;
+}
+.main-footer a,
+.footer-action-item {
+	color: #ffffff;
+	fill: #ffffff;
+}
+.main-footer ul {
+	list-style: none;
+}
+.main-footer .footer-logo{
+	fill: #ffc600;
+}
+.footer-logo-link:hover,
+.footer-logo-link:focus,
+.logo-html:hover,
+.logo-html:focus,
+.footer-features-item:hover,
+.footer-features-item:focus {
+	opacity: 0.6;
+}
+.footer-logo-link:active,
+.logo-html:active,
+.footer-features-item:active {
+	opacity: 0.3;
+}
+.footer-features-list {
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.footer-action-item,
+.footer-social-item {
+	opacity: 0.7;
+	fill: #ffc600;
+}
+.footer-action-item:hover,
+.footer-action-item:focus,
+.footer-social-item:hover,
+.footer-social-item:focus {
+	opacity: 1;
+}
+.footer-action-item:active,
+.footer-social-item:active {
+	opacity: 0.3;
+}
+
+/*** Главная страница
+============================================================*/
+/*** Слайдер
+========================*/
+.tag-line {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 56px;
+}
+.slider-info td {
+	color: #000000;
+	font-family: "Gilroy Light", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+}
+.slider-info th {
+	color: #000000;
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+
+/*** Каталог
+========================*/
+.graphic-catalog-list {
+	list-style: none;
+}
+.item-background {
+	background-color: rgba(240, 197, 46, 0.5);
+}
+.graphic-catalog-item a {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+.item-background:hover,
+.item-background:focus {
+	background-color: rgba(240, 197, 46, 1);
+}
+
+
+
+/*** Услуги
+========================*/
+.main-services {
+	background-color: #e5e5e5;
+}
+.main-services h3 {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+
+
+
+/*** Бренды
+========================*/
+.main-brands-list {
+	list-style: none;
+}
+
+
+
+/*** Особенности
+========================*/
+.main-feature h2 {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+.feature-about-us-list {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+
+
+/*** Модальная карта
+========================*/
+.modal-map {
+	background-image: url("../img/map-big.png");
+	background-repeat: no-repeat;
+}
+
+
+
+/*** Модальная форма
+========================*/
+.modal-form label {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+.modal-input {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	border: none;
+}
+.modal-input::placeholder {
+	color: #464646;
+	background-color: rgba(230, 230, 230, 0.5);
+}
+.modal-input:-ms-input-placeholder {
+	color: #464646;
+	background-color: rgba(230, 230, 230, 0.5);
+}
+
+.modal-input:hover::placeholder {
+	background-color: rgba(230, 230, 230, 0.8);
+}
+.modal-input:hover:-ms-input-placeholder {
+	background-color: rgba(230, 230, 230, 0.8);
+}
+.modal-input:focus::placeholder {
+	background-color: rgba(230, 230, 230, 0.8);
+}
+.modal-input:focus:-ms-input-placeholder {
+	background-color: rgba(230, 230, 230, 0.8);
+}
+.modal-input:active::placeholder {
+	color: #000000;
+	background-color: #ffffff;
+	border: 2px solid #f7e296;
+}
+.modal-input:active:-ms-input-placeholder {
+	color: #000000;
+	background-color: #ffffff;
+	border: 2px solid #f7e296;
+}
+
+
+
+/*** Страница каталога
+============================================================*/
+.catalog-title {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+}
+.breadcrumbs {
+	list-style: none;
+}
+.breadcrumbs a {
+	color: rgba(0, 0, 0, 0.3);
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+.breadcrumbs a:active {
+	color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*** Фильтр
+========================*/
+.catalog-filter {
+	background-color: #efefef;
+}
+.catalog-filter p {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	background-color: rgba(0, 0, 0, 0.08);
+}
+.filter-area legend {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+.range-control label {
+	color: rgba(0, 0, 0, 0.2);
+	font-size: 14px;
+	line-height: 24px;
+}
+.color-list,
+.bluetooth-list {
+	color: rgba(0, 0, 0, 1);
+	font-size: 14px;
+	line-height: 40px;
+}
+
+
+/*** Страница каталога
+========================*/
+.products-sort {
+	background-color: #efefef;
+}
+.products-sort p {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+.products-sort-list {
+	list-style: none;
+}
+.products-sort-item a {
+	color: rgba(0, 0, 0, 0.3);
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+.products-sort-item a:hover,
+.products-sort-item a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+.products-sort-item a:active {
+	color: rgba(0, 0, 0, 1);
+}
+.products-list {
+	list-style: none;
+}
+.products-item a {
+	color: #000000;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+}
+.products-item p {
+	color: #464646;
+	font-family: "Gilroy Light", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+.products-btn-compare {
+	color: rgba(0, 0, 0, 0.6);
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	border: none;
+	background-color: transparent;
+}
+.products-btn-compare:hover,
+.products-btn-compare:focus {
+	color: rgba(0, 0, 0, 1);
+}
+.products-btn-compare:active {
+	color: rgba(0, 0, 0, 0.2);
+}
+.pagination-list {
+	list-style: none;
+	background-color: rgba(0, 0, 0, 0.08);
+}
+.pagination-item a {
+	color: rgba(0, 0, 0, 0.3);
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+}
+.pagination-list .pagination-btn {
+	color: rgba(0, 0, 0, 1);
+}
+.pagination-list .pagination-active {
+	color: rgba(0, 0, 0, 1);
+}
+.pagination-btn:hover,
+.pagination-btn:focus {
+	background-color: rgba(0, 0, 0, 0.08);
+}
+.pagination-btn:active {
+	color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.08);
+}
+.pagination-item .pagination-link:hover,
+.pagination-item .pagination-link:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+.pagination-item .pagination-link:active {
+	color: rgba(0, 0, 0, 1);
+}
