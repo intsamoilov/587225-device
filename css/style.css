@@ -221,6 +221,9 @@ body ul {
 	font-size: 47px;
 	line-height: 56px;
 }
+.slider-info {
+	text-align: left;
+}
 .slider-info td {
 	color: #000000;
 	font-family: "Gilroy Light", Arial, sans-serif;
@@ -417,9 +420,16 @@ body ul {
 .products-list {
 	list-style: none;
 }
-.products-item a {
+.produсts-item-title {
 	color: #000000;
 	font-size: 18px;
+}
+.produсts-item-title:hover,
+.produсts-item-title:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+.produсts-item-title:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 .products-item p {
 	color: #464646;
