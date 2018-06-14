@@ -35,27 +35,34 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Open Sans Light", Arial, sans-serif;
-	font-size: 15px;
-	line-height: 30px;
+	font-family: "Gilroy Extrabold", Arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
 	color: #464646;
 	background-color: #ffffff;
 }
 a {
 	text-decoration: none;
 }
-
-
+body ul {
+	margin: 0;
+	padding: 0;
+}
+.title {
+	color: #000000;
+	font-size: 47px;
+	line-height: 48px;
+}
 
 /*** Кнопки
 ========================*/
 .button {
 	color: black;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 18px;
-	line-height: 24px;
 	text-transform: uppercase;
 	border: none;
+	cursor: pointer;
+	outline: none;
 	background-color: #f0c52e;
 }
 .button:active {
@@ -77,20 +84,22 @@ a {
 .main-header ul {
 	list-style: none;
 }
+.header-row {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+}
 .main-header a {
 	color: #000000;
 }
-.header-logo-link:hover,
-.header-logo-link:focus,
+.logo[href]:hover,
+.logo[href]:focus,
 .main-header a:hover,
-.main-header a:focus,
-.header-action-item:hover,
-.header-action-item:focus {
+.main-header a:focus {
 	opacity: 0.6;
 }
-.header-logo-link:active,
-.main-header a:active,
-.header-action-item:active {
+.logo[href]:active,
+.main-header a:active {
 	opacity: 0.3;
 }
 .search-area {
@@ -135,7 +144,6 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 .header-nav {
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -153,28 +161,29 @@ a {
 ========================*/
 .main-footer {
 	color: #ffffff;
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
 	background-color: #464646;
 }
-.main-footer a,
-.footer-action-item {
+.main-footer a {
 	color: #ffffff;
-	fill: #ffffff;
 }
 .main-footer ul {
 	list-style: none;
 }
-.main-footer .footer-logo{
+.main-footer .logo{
 	fill: #ffc600;
 }
-.footer-logo-link:hover,
-.footer-logo-link:focus,
+.logo[href]:hover,
+.logo[href]:focus,
 .logo-html:hover,
 .logo-html:focus,
 .footer-features-item:hover,
 .footer-features-item:focus {
 	opacity: 0.6;
 }
-.footer-logo-link:active,
+.logo[href]:active,
 .logo-html:active,
 .footer-features-item:active {
 	opacity: 0.3;
@@ -185,20 +194,22 @@ a {
 	line-height: 24px;
 	text-transform: uppercase;
 }
-.footer-action-item,
-.footer-social-item {
-	opacity: 0.7;
+.main-footer .action-link,
+.main-footer .footer-social-link {
 	fill: #ffc600;
+	color: rgba(255, 255, 255, 0.7);
 }
-.footer-action-item:hover,
-.footer-action-item:focus,
-.footer-social-item:hover,
-.footer-social-item:focus {
-	opacity: 1;
+.main-footer .action-link:hover,
+.main-footer .action-link:focus,
+.main-footer .footer-social-link:hover,
+.main-footer .footer-social-link:focus {
+	fill-opacity: 0.6;
+	color: rgba(255, 255, 255, 1);
 }
-.footer-action-item:active,
-.footer-social-item:active {
-	opacity: 0.3;
+.main-footer .action-link:active,
+.main-footer .footer-social-link:active {
+	fill-opacity: 0.3;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 /*** Главная страница
@@ -207,7 +218,6 @@ a {
 ========================*/
 .tag-line {
 	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 47px;
 	line-height: 56px;
 }
@@ -223,7 +233,14 @@ a {
 	font-size: 13px;
 	line-height: 20px;
 }
-
+.slider-btn {
+	cursor: pointer;
+}
+.info {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+}
 
 /*** Каталог
 ========================*/
@@ -235,9 +252,7 @@ a {
 }
 .graphic-catalog-item a {
 	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 18px;
-	line-height: 24px;
 }
 .item-background:hover,
 .item-background:focus {
@@ -250,15 +265,16 @@ a {
 ========================*/
 .main-services {
 	background-color: #e5e5e5;
-}
-.main-services h3 {
-	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
-	font-size: 47px;
-	line-height: 48px;
-}
 
-
+}
+.services-btn {
+	cursor: pointer;
+}
+.main-services-info p {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+}
 
 /*** Бренды
 ========================*/
@@ -270,15 +286,13 @@ a {
 
 /*** Особенности
 ========================*/
-.main-feature h2 {
-	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
-	font-size: 47px;
-	line-height: 48px;
+.main-feature p {
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
 }
 .feature-about-us-list {
 	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 40px;
 }
@@ -287,54 +301,38 @@ a {
 
 /*** Модальная карта
 ========================*/
+.map {
+	width: 960px;
+	height: 559px;
+}
 .modal-map {
 	background-image: url("../img/map-big.png");
 	background-repeat: no-repeat;
 }
-
+.modal-close {
+	cursor: pointer;
+}
 
 
 /*** Модальная форма
 ========================*/
 .modal-form label {
 	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 18px;
-	line-height: 24px;
 }
 .modal-input {
+	color: #464646;
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 15px;
-	line-height: 36px;
 	border: none;
-}
-.modal-input::placeholder {
-	color: #464646;
+	outline: none;
 	background-color: rgba(230, 230, 230, 0.5);
 }
-.modal-input:-ms-input-placeholder {
-	color: #464646;
-	background-color: rgba(230, 230, 230, 0.5);
-}
-
-.modal-input:hover::placeholder {
+.modal-input:hover,
+.modal-input:focus {
 	background-color: rgba(230, 230, 230, 0.8);
 }
-.modal-input:hover:-ms-input-placeholder {
-	background-color: rgba(230, 230, 230, 0.8);
-}
-.modal-input:focus::placeholder {
-	background-color: rgba(230, 230, 230, 0.8);
-}
-.modal-input:focus:-ms-input-placeholder {
-	background-color: rgba(230, 230, 230, 0.8);
-}
-.modal-input:active::placeholder {
-	color: #000000;
-	background-color: #ffffff;
-	border: 2px solid #f7e296;
-}
-.modal-input:active:-ms-input-placeholder {
+.modal-input:active {
 	color: #000000;
 	background-color: #ffffff;
 	border: 2px solid #f7e296;
@@ -344,12 +342,6 @@ a {
 
 /*** Страница каталога
 ============================================================*/
-.catalog-title {
-	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
-	font-size: 47px;
-	line-height: 48px;
-}
 .breadcrumbs {
 	list-style: none;
 }
@@ -359,11 +351,11 @@ a {
 	font-size: 14px;
 	line-height: 24px;
 }
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
+.breadcrumbs a[href]:hover,
+.breadcrumbs a[href]:focus {
 	color: rgba(0, 0, 0, 0.6);
 }
-.breadcrumbs a:active {
+.breadcrumbs a[href]:active {
 	color: rgba(0, 0, 0, 0.1);
 }
 
@@ -376,16 +368,12 @@ a {
 }
 .catalog-filter p {
 	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 16px;
-	line-height: 24px;
 	background-color: rgba(0, 0, 0, 0.08);
 }
 .filter-area legend {
 	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 18px;
-	line-height: 24px;
 }
 .range-control label {
 	color: rgba(0, 0, 0, 0.2);
@@ -395,6 +383,7 @@ a {
 .color-list,
 .bluetooth-list {
 	color: rgba(0, 0, 0, 1);
+	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 40px;
 }
@@ -407,9 +396,7 @@ a {
 }
 .products-sort p {
 	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 16px;
-	line-height: 24px;
 }
 .products-sort-list {
 	list-style: none;
@@ -432,9 +419,7 @@ a {
 }
 .products-item a {
 	color: #000000;
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 18px;
-	line-height: 24px;
 }
 .products-item p {
 	color: #464646;
@@ -442,19 +427,20 @@ a {
 	font-size: 16px;
 	line-height: 24px;
 }
-.products-btn-compare {
+.ghost-button {
 	color: rgba(0, 0, 0, 0.6);
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 20px;
 	border: none;
+	cursor: pointer;
 	background-color: transparent;
 }
-.products-btn-compare:hover,
-.products-btn-compare:focus {
+.ghost-button:hover,
+.ghost-button:focus {
 	color: rgba(0, 0, 0, 1);
 }
-.products-btn-compare:active {
+.ghost-button:active {
 	color: rgba(0, 0, 0, 0.2);
 }
 .pagination-list {
@@ -463,9 +449,8 @@ a {
 }
 .pagination-item a {
 	color: rgba(0, 0, 0, 0.3);
-	font-family: "Gilroy Extrabold", Arial, sans-serif;
 	font-size: 16px;
-	line-height: 24px;
+	cursor: pointer;
 }
 .pagination-list .pagination-btn {
 	color: rgba(0, 0, 0, 1);
@@ -473,18 +458,18 @@ a {
 .pagination-list .pagination-active {
 	color: rgba(0, 0, 0, 1);
 }
-.pagination-btn:hover,
-.pagination-btn:focus {
+.pagination-btn[href]:hover,
+.pagination-btn[href]:focus {
 	background-color: rgba(0, 0, 0, 0.08);
 }
-.pagination-btn:active {
+.pagination-btn[href]:active {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: rgba(0, 0, 0, 0.08);
 }
-.pagination-item .pagination-link:hover,
-.pagination-item .pagination-link:focus {
+.pagination-item .pagination-link[href]:hover,
+.pagination-item .pagination-link[href]:focus {
 	color: rgba(0, 0, 0, 0.6);
 }
-.pagination-item .pagination-link:active {
+.pagination-item .pagination-link[href]:active {
 	color: rgba(0, 0, 0, 1);
 }

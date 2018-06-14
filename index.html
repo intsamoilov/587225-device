@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header class="main-header">
-		<span class="header-logo">
+		<span class="logo">
 			<svg width="164" height="36">
 				<use xlink:href="#logo"/>
 			</svg>
@@ -18,24 +18,30 @@
 				<label class="search-area-label"><input type="search" name="search" class="search-area" placeholder="Поиск по сайту"></label>
 				<button class="search-button">Найти</button>
 			</form>	
-			<ul class="header-action-list">
-				<li class="header-action-item">
-					<svg width="13" height="12">
-						<use xlink:href="#user"/>
-					</svg>
-					<a href="#">Войти</a>
+			<ul class="action-list">
+				<li class="action-item">
+					<a href="#">
+						<svg width="13" height="12">
+							<use xlink:href="#user"/>
+						</svg>
+						Войти
+					</a>
 				</li>
-				<li class="header-action-item">
-					<svg width="10" height="10">
-						<use xlink:href="#compare"/>
-					</svg>
-					<a href="#">Сравнить</a>
+				<li class="action-item">
+					<a href="#">
+						<svg width="10" height="10">
+							<use xlink:href="#compare"/>
+						</svg>
+						Сравнить
+					</a>
 				</li>
-				<li class="header-action-item">
-					<svg width="12" height="12">
-						<use xlink:href="#cart"/>
-					</svg>
-					<a href="#">Корзина</a>
+				<li class="action-item">
+					<a href="#">
+						<svg width="12" height="12">
+							<use xlink:href="#cart"/>
+						</svg>
+						Корзина
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -86,7 +92,7 @@
 					<h3 class="visually-hidden">Палка для селфи</h3>
 					<img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
 					<p class="tag-line"><b>Делай селфи,<br> как Бен Стиллер!</b></p>
-					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<p class="info">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 					<a class="button" href="#">Подробнее</a>
 					<table class="slider-info">
 						<tr>
@@ -105,7 +111,7 @@
 					<h3 class="visually-hidden">Фитнес-браслет</h3>
 					<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
 					<p class="tag-line"><b>Худеем<br> правильно!</b></p>
-					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+					<p class="info">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 					<a class="button" href="#">Подробнее</a>
 					<table class="slider-info">
 						<tr>
@@ -120,7 +126,7 @@
 					<h3 class="visually-hidden">Квадрокоптер</h3>
 					<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
 					<p class="tag-line"><b>Порхает как бабочка,<br> жалит как пчела!</b></p>
-					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+					<p class="info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 					<a class="button" href="#">Подробнее</a>
 					<table class="slider-info">
 						<tr>
@@ -184,19 +190,19 @@
 				<button class="button services-btn" type="button">Кредит</button>
 			</div>
 			<div class="main-services-info service-1">
-				<h3>Доставка</h3>
+				<h3 class="title">Доставка</h3>
 				<p>
 					Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 				</p>
 			</div>
 			<div class="main-services-info service-2">
-				<h3>Гарантия</h3>
+				<h3 class="title">Гарантия</h3>
 				<p>
 					Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
 				</p>
 			</div>
 			<div class="main-services-info service-3">
-				<h3>Кредит</h3>
+				<h3 class="title">Кредит</h3>
 				<p>
 					Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
 				</p>
@@ -213,7 +219,7 @@
 		</section>
 		<section class="main-feature">
 			<div class="feature-about-us">
-				<h2>О нас</h2>
+				<h2 class="title">О нас</h2>
 				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>   
 				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
 				<ul class="feature-about-us-list">
@@ -224,7 +230,7 @@
 				<a href="#" class="button">Подробнее о нас</a>
 			</div>
 			<div class="feature-contacts">
-				<h2>Контакты</h2>
+				<h2 class="title">Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 				<a href="#"><img src="img/map-small.png" width="560" height="222" alt="г. Москва, ул. Строителей, 15"></a><br>
 				<a href="#" class="button">Напишите нам</a>
@@ -233,29 +239,35 @@
 	</main>
 	<footer class="main-footer">
 		<div class="footer-top">
-			<span class="footer-logo">
+			<span class="logo">
 				<svg width="164" height="36">
 					<use xlink:href="#logo"/>
 				</svg>
 			</span>
-			<ul class="footer-action-list">
-				<li class="footer-action-item">
-					<svg width="13" height="12">
-						<use xlink:href="#user"/>
-					</svg>
-					<a href="#">Войти</a>
+			<ul class="action-list">
+				<li class="action-item">
+					<a class="action-link" href="#">
+						<svg width="13" height="12">
+							<use xlink:href="#user"/>
+						</svg>
+						Войти
+					</a>
 				</li>
-				<li class="footer-action-item">
-					<svg width="10" height="10">
-						<use xlink:href="#compare"/>
-					</svg>
-					<a href="#">Сравнить</a>
+				<li class="action-item">
+					<a class="action-link" href="#">
+						<svg width="10" height="10">
+							<use xlink:href="#compare"/>
+						</svg>
+						Сравнить
+					</a>
 				</li>
-				<li class="footer-action-item">
-					<svg width="12" height="12">
-						<use xlink:href="#cart"/>
-					</svg>
-					<a href="#">Корзина</a>
+				<li class="action-item">
+					<a class="action-link" href="#">
+						<svg width="12" height="12">
+							<use xlink:href="#cart"/>
+						</svg>
+						Корзина
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -270,9 +282,9 @@
 		</div>
 		<div class="footer-bottom">
 			<ul class="footer-social-list">
-				<li class="footer-social-item"><a href="#">Facebook</a></li>
-				<li class="footer-social-item"><a href="#">Instagram</a></li>
-				<li class="footer-social-item"><a href="#">Twitter</a></li>
+				<li class="footer-social-item"><a class="footer-social-link" href="#">Facebook</a></li>
+				<li class="footer-social-item"><a class="footer-social-link" href="#">Instagram</a></li>
+				<li class="footer-social-item"><a class="footer-social-link" href="#">Twitter</a></li>
 			</ul>
 			<a href="https://htmlacademy.ru/intensive/htmlcss">
 				<svg class="logo-html" width="27" height="35">
@@ -293,7 +305,7 @@
 			<div class="form-text">
 				<label class="text-label">Текст письма:<textarea class="modal-input" name="message" placeholder="В свободной форме"></textarea></label>
 			</div>
-			<button class="button feedback-button" type="submit">Отправить</button>
+			<button class="button" type="submit">Отправить</button>
 		</form>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
