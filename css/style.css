@@ -381,8 +381,17 @@ body ul {
 }
 .range-control label {
 	color: rgba(0, 0, 0, 0.2);
+	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
+}
+.range-control-value {
+	color: rgba(0, 0, 0, 0.2);
+	font-family: "Open Sans Light", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	border: none;
+	background-color: transparent;
 }
 .color-list,
 .bluetooth-list {
