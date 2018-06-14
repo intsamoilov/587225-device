@@ -105,6 +105,7 @@ body ul {
 .search-area {
 	border: none;
 	color: #000000;
+	outline: none;
 	background-color: transparent;
 }
 .search-area:-ms-input-placeholder {
@@ -331,10 +332,10 @@ body ul {
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.5);
 }
-.modal-input:hover,
-.modal-input:focus {
+.modal-input:hover {
 	background-color: rgba(230, 230, 230, 0.8);
 }
+.modal-input:focus,
 .modal-input:active {
 	color: #000000;
 	background-color: #ffffff;
