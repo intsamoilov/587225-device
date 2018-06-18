@@ -7,12 +7,12 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
-		<span class="logo">
+	<header class="main-header container">
+		<div class="logo">
 			<svg width="164" height="36">
 				<use xlink:href="#logo"/>
 			</svg>
-		</span>
+		</div>
 		<div class="header-row flex-container">
 			<form class="header-search" action="http://echo.htmlacademy.ru" method="get">
 				<label class="search-area-label"><input class="search-area" type="search" name="search"  placeholder="Поиск по сайту"></label>
@@ -48,7 +48,7 @@
 		<nav class="header-nav flex-container">
 			<div class="header-catalog">
 				<a href="catalog.html" class="header-catalog-title">Каталог товаров</a>
-				<ul class="dropdown">
+				<ul class="dropdown flex-container">
 					<li class="dropdown-item">
 						<ul class="header-catalog-list">
 							<li class="header-catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
@@ -80,13 +80,8 @@
 	</header>
 	<main class="main-content">
 		<h1 class="visually-hidden">Магазин модной электроники DEVICE</h1>
-		<section class="main-slider">
+		<section class="main-slider container">
 			<h2 class="visually-hidden">Популярные товары</h2>
-			<div class="slider-buttons">
-				<button class="slider-btn" type="button">Слайдер 1</button>
-				<button class="slider-btn" type="button">Слайдер 2</button>
-				<button class="slider-btn" type="button">Слайдер 3</button>
-			</div>
 			<div class="slides">
 				<div class="slide slide-1 flex-container">
 					<h3 class="visually-hidden">Палка для селфи</h3>
@@ -96,7 +91,12 @@
 					<div class="slide-content flex-container">
 						<p class="tag-line"><b>Делай селфи,<br> как Бен Стиллер!</b></p>
 						<p class="info">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-						<a class="button" href="#">Подробнее</a>
+						<div class="slider-buttons flex-container">	
+							<a class="button info-btn" href="#">Подробнее</a>
+							<button class="slider-btn visually-hidden" type="button">Слайдер 1</button>
+							<button class="slider-btn visually-hidden" type="button">Слайдер 2</button>
+							<button class="slider-btn visually-hidden" type="button">Слайдер 3</button>
+						</div>
 						<table class="slider-info">
 							<tr>
 								<th>Длина палки</th>
@@ -153,7 +153,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="main-catalog">
+		<section class="main-catalog container">
 			<h2 class="visually-hidden">Каталог товаров</h2>
 			<ul class="graphic-catalog-list flex-container">
 				<li class="graphic-catalog-item">
@@ -194,35 +194,37 @@
 				</li>
 			</ul>
 		</section>
-		<section class="main-services flex-container">
-			<h2 class="visually-hidden">Услуги</h2>
-			<div class="main-services-choice flex-container">
-				<button class="button services-btn selected" type="button">Доставка</button>
-				<button class="button services-btn" type="button">Гарантия</button>
-				<button class="button services-btn" type="button">Кредит</button>
-			</div>
-			<div class="main-services-wrap flex-container">
-				<div class="main-services-info service-1">
-					<h3 class="title">Доставка</h3>
-					<p>
-						Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-					</p>
+		<section class="main-services">
+			<div class="container flex-container">
+				<h2 class="visually-hidden">Услуги</h2>
+				<div class="main-services-choice flex-container">
+					<button class="button services-btn selected" type="button">Доставка</button>
+					<button class="button services-btn" type="button">Гарантия</button>
+					<button class="button services-btn" type="button">Кредит</button>
 				</div>
-				<div class="main-services-info service-2">
-					<h3 class="title">Гарантия</h3>
-					<p>
-						Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-					</p>
-				</div>
-				<div class="main-services-info service-3">
-					<h3 class="title">Кредит</h3>
-					<p>
-						Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-					</p>
+				<div class="main-services-wrap flex-container">
+					<div class="main-services-info service-1">
+						<h3 class="title">Доставка</h3>
+						<p>
+							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+						</p>
+					</div>
+					<div class="main-services-info service-2">
+						<h3 class="title">Гарантия</h3>
+						<p>
+							Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+						</p>
+					</div>
+					<div class="main-services-info service-3">
+						<h3 class="title">Кредит</h3>
+						<p>
+							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+						</p>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="main-brands">
+		<section class="main-brands container">
 			<h2 class="visually-hidden">Марки товаров</h2>
 			<ul class="main-brands-list flex-container">
 				<li class="main-brands-item"><a href="#"><img src="img/logo-1.png" width="260" height="100" alt="DJI"></a></li>
@@ -231,8 +233,8 @@
 				<li class="main-brands-item"><a href="#"><img src="img/logo-4.png" width="260" height="100" alt="Vive"></a></li>
 			</ul>
 		</section>
-		<section class="main-feature flex-container">
-			<div class="feature-about-us">
+		<section class="main-feature flex-container container">
+			<div class="feature-about-us flex-container">
 				<h2 class="title">О нас</h2>
 				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>   
 				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
@@ -241,92 +243,96 @@
 					<li>Автотрейдинг</li>
 					<li>ЖелДорЭкспедиция</li>
 				</ul>
-				<a href="#" class="button">Подробнее о нас</a>
+				<a href="#" class="button btn-about-us">Подробнее о нас</a>
 			</div>
-			<div class="feature-contacts">
+			<div class="feature-contacts flex-container">
 				<h2 class="title">Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<a href="#"><img src="img/map-small.png" width="560" height="222" alt="г. Москва, ул. Строителей, 15"></a><br>
-				<a href="#" class="button">Напишите нам</a>
+				<a  class="small-map" href="#"><img src="img/map-small.png" width="560" height="222" alt="г. Москва, ул. Строителей, 15"></a><br>
+				<a href="#" class="button btn-write-us">Напишите нам</a>
 			</div>
 		</section>
 	</main>
 	<footer class="main-footer">
-		<div class="footer-top flex-container">
-			<span class="logo">
-				<svg width="164" height="36">
-					<use xlink:href="#logo"/>
-				</svg>
-			</span>
-			<ul class="action-list flex-container">
-				<li class="action-item">
-					<a class="action-link" href="#">
-						<svg width="13" height="12">
-							<use xlink:href="#user"/>
-						</svg>
-						Войти
-					</a>
-				</li>
-				<li class="action-item">
-					<a class="action-link" href="#">
-						<svg width="10" height="10">
-							<use xlink:href="#compare"/>
-						</svg>
-						Сравнить
-					</a>
-				</li>
-				<li class="action-item">
-					<a class="action-link" href="#">
-						<svg width="12" height="12">
-							<use xlink:href="#cart"/>
-						</svg>
-						Корзина
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="footer-middle flex-container">
-			<p>г. Москва, ул. Строителей, 15</p>
-			<ul class="footer-features-list flex-container">
-				<li class="footer-features-item"><a href="#">Доставка</a></li>
-				<li class="footer-features-item"><a href="#">Гарантия</a></li>
-				<li class="footer-features-item"><a href="#">Контакты</a></li>
-			</ul>
-			<p>Тел.: +7 (495) 495-95-95</p>
-		</div>
-		<div class="footer-bottom flex-container">
-			<ul class="footer-social-list flex-container">
-				<li class="footer-social-item"><a class="footer-social-link" href="#">Facebook</a></li>
-				<li class="footer-social-item"><a class="footer-social-link" href="#">Instagram</a></li>
-				<li class="footer-social-item"><a class="footer-social-link" href="#">Twitter</a></li>
-			</ul>
-			<a href="https://htmlacademy.ru/intensive/htmlcss">
-				<svg class="logo-html" width="27" height="35">
-					<use xlink:href="#html-logo"/>
-				</svg>
-			</a>
+		<div class="container">
+			<div class="footer-top flex-container">
+				<span class="logo">
+					<svg width="164" height="36">
+						<use xlink:href="#logo"/>
+					</svg>
+				</span>
+				<ul class="action-list flex-container">
+					<li class="action-item">
+						<a class="action-link" href="#">
+							<svg width="13" height="12">
+								<use xlink:href="#user"/>
+							</svg>
+							Войти
+						</a>
+					</li>
+					<li class="action-item">
+						<a class="action-link" href="#">
+							<svg width="10" height="10">
+								<use xlink:href="#compare"/>
+							</svg>
+							Сравнить
+						</a>
+					</li>
+					<li class="action-item">
+						<a class="action-link" href="#">
+							<svg width="12" height="12">
+								<use xlink:href="#cart"/>
+							</svg>
+							Корзина
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-middle flex-container">
+				<p>г. Москва, ул. Строителей, 15</p>
+				<ul class="footer-features-list flex-container">
+					<li class="footer-features-item"><a href="#">Доставка</a></li>
+					<li class="footer-features-item"><a href="#">Гарантия</a></li>
+					<li class="footer-features-item"><a href="#">Контакты</a></li>
+				</ul>
+				<p>Тел.: +7 (495) 495-95-95</p>
+			</div>
+			<div class="footer-bottom flex-container">
+				<ul class="footer-social-list flex-container">
+					<li class="footer-social-item"><a class="footer-social-link" href="#">Facebook</a></li>
+					<li class="footer-social-item"><a class="footer-social-link" href="#">Instagram</a></li>
+					<li class="footer-social-item"><a class="footer-social-link" href="#">Twitter</a></li>
+				</ul>
+				<a href="https://htmlacademy.ru/intensive/htmlcss">
+					<svg class="logo-html" width="27" height="35">
+						<use xlink:href="#html-logo"/>
+					</svg>
+				</a>
+			</div>
 		</div>
 	</footer>
-	<section class="modal modal-form">
+	<section class="modal modal-form flex-container">
 		<h2 class="visually-hidden">Форма обратной связи</h2>
-		<form class="modal-form-feedback" method="post" action="https://echo.htmlacademy.ru">
-			<div class="form-name">
-				<label class="name-label">Ваше имя:<input class="modal-input" type="text" name="name" placeholder="Имя Фамилия" required></label>
-			</div>
-			<div class="form-mail">
-				<label class="mail-label">Ваш e-mail:<input class="modal-input" type="email" name="email" placeholder="email@example.com"></label>
+		<form class="modal-form-feedback flex-container" method="post" action="https://echo.htmlacademy.ru">
+			<div class="form-wrap flex-container">
+				<div class="form-name">
+					<label class="name-label">Ваше имя:<br><input class="modal-input" type="text" name="name" placeholder="Имя Фамилия" required></label>
+				</div>
+				<div class="form-mail">
+					<label class="mail-label">Ваш e-mail:<br><input class="modal-input" type="email" name="email" placeholder="email@example.com"></label>
+				</div>
 			</div>
 			<div class="form-text">
-				<label class="text-label">Текст письма:<textarea class="modal-input" name="message" placeholder="В свободной форме"></textarea></label>
+				<label class="text-label">Текст письма:<br><textarea class="modal-input" name="message" placeholder="В свободной форме"></textarea></label>
 			</div>
-			<button class="button" type="submit">Отправить</button>
+			<button class="button btn-send" type="submit">Отправить</button>
 		</form>
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="modal-close visually-hidden" type="button">Закрыть</button>
 	</section>
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Мы на карте</h2>
 		<div class="map"></div>
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="modal-close visually-hidden" type="button">Закрыть</button>
 	</section>
 	<svg style="display: none">
 	<symbol id="logo" viewbox="0 0 164 34.09">
