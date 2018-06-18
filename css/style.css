@@ -261,7 +261,6 @@ body ul {
 /*** Подвал
 ========================*/
 .main-footer {
-	margin-top: 90px;
 	padding: 65px 0;
 	color: #ffffff;
 	font-family: "Open Sans Light", Arial, sans-serif;
@@ -514,6 +513,7 @@ body ul {
 ========================*/
 .main-feature {
 	justify-content: space-between;
+	margin-bottom: 90px;
 }
 .main-feature .title {
 	margin: 55px 0;
@@ -657,9 +657,22 @@ body ul {
 	color: #000000;
 	font-size: 16px;
 	padding: 20px 0;
+	width: 270px;
 }
 .filter-title-wrap {
-	background-color: rgba(0, 0, 0, 0.08);	
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 70px;
+	background-color: rgba(0, 0, 0, 0.08);
+}
+.filter-form {
+	flex-direction: column;
+	width: 200px;
+	margin-left: auto;
+	margin-right: 70px;
+}
+.filter-form .button {
+	min-width: 200px;
 }
 .filter-area legend {
 	color: #000000;
@@ -698,16 +711,23 @@ body ul {
 }
 .products-sort {
 	align-items: baseline;
-	justify-content: space-between;
-	padding-left: 90px;
+	margin-bottom: 70px;
+	padding-left: 75px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	background-color: #efefef;
 }
 .products-sort p {
 	color: #000000;
 	font-size: 16px;
+	margin-right: 55px;
 }
 .products-sort-list {
+	width: 560px;
 	list-style: none;
+}
+.products-sort-item {
+	padding-right: 30px;
 }
 .products-sort-item a {
 	color: rgba(0, 0, 0, 0.3);
@@ -725,9 +745,20 @@ body ul {
 .products-list {
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-left: auto;
+	margin-left: 75px;
 	width: 760px;
 	list-style: none;
+}
+.products-item {
+	margin-bottom: 45px;
+}
+.price-wrap {
+	justify-content: space-between;
+	align-self: baseline;
+}
+.price-wrap p {
+	margin: 0;
+	padding: 0;
 }
 .produсts-item-title {
 	color: #000000;
@@ -739,6 +770,12 @@ body ul {
 }
 .produсts-item-title:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+.products-buttons {
+	flex-direction: column;
+}
+.products-item {
+	width: 360px;
 }
 .products-item p {
 	color: #464646;
@@ -764,8 +801,11 @@ body ul {
 }
 .pagination-list {
 	justify-content: space-between;
+	align-items: center;
 	width: 760px;
-	margin-left: auto;
+	min-height: 70px;
+	margin-left: 75px;
+	margin-bottom: 80px;
 	list-style: none;
 	background-color: rgba(0, 0, 0, 0.08);
 }
