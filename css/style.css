@@ -657,8 +657,13 @@ body ul {
 	margin-left: auto;
 	flex-grow: 1;
 }
+.catalog-header-row {
+	padding-top: 23px;
+	padding-bottom: 23px;
+}
 .catalog-subtitle {
 	margin: 0;
+	line-height: 24px;
 	color: #000000;
 	font-size: 16px;
 }
@@ -669,8 +674,6 @@ body ul {
 .filter-title-wrap {
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
-	height: 70px;
 	margin-bottom: 70px;
 	background-color: rgba(0, 0, 0, 0.08);
 }
@@ -727,12 +730,8 @@ body ul {
 	width: 756px;
 	flex-grow: 1;
 	padding-left: 75px;
-	height: 70px;
-	align-items: center;
 }
-.sort-title {
-	color: #000000;
-	font-size: 16px;
+.products .catalog-subtitle {
 	margin-right: 55px;
 }
 .products-sort-list {
@@ -741,6 +740,7 @@ body ul {
 }
 .products-sort-item {
 	margin-right: 30px;
+	line-height: 24px;
 }
 .products-sort-item:nth-child(3) {
 	margin-right: auto;
