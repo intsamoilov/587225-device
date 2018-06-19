@@ -98,9 +98,9 @@
 			<section class="catalog-filter">
 				<h2 class="visually-hidden">Фильтр каталога</h2>
 				<div class="filter-title-wrap">
-					<p>Фильтр:</p>
+					<p class="catalog-subtitle filter-wrapper">Фильтр:</p>
 				</div>
-				<form class="filter-form flex-container" method="post" action="https://echo.htmlacademy.ru">
+				<form class="filter-form flex-container filter-wrapper" method="post" action="https://echo.htmlacademy.ru">
 					<fieldset class="filter-area">
 						<legend class="filter-area-title">Стоимость</legend>
 						<div class="range">
@@ -152,15 +152,17 @@
 			</section>
 			<section class="products flex-container">
 				<h2 class="visually-hidden">Страница каталога</h2>
-				<div class="products-sort flex-container">
-					<p>Сортировка:</p>
-					<ul class="products-sort-list flex-container">
-						<li class="products-sort-item"><a href="#">По цене</a></li>
-						<li class="products-sort-item"><a href="#">По типу</a></li>
-						<li class="products-sort-item"><a href="#">По популярности</a></li>
-						<li class="products-sort-item visually-hidden"><a href="#">По возрастанию</a></li>
-						<li class="products-sort-item visually-hidden"><a href="#">По убыванию</a></li>
-					</ul>
+				<div class="sort-wrap">
+					<div class="products-sort flex-container">
+						<p class="sort-title">Сортировка:</p>
+						<ul class="products-sort-list flex-container">
+							<li class="products-sort-item"><a href="#">По цене</a></li>
+							<li class="products-sort-item"><a href="#">По типу</a></li>
+							<li class="products-sort-item"><a href="#">По популярности</a></li>
+							<li class="products-sort-item"><a href="#">По возраст</a></li>
+							<li class="products-sort-item"><a href="#">По убыв</a></li>
+						</ul>
+					</div>
 				</div>
 				<ul class="products-list flex-container">
 					<li class="products-item">
