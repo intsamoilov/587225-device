@@ -881,6 +881,7 @@ body ul {
 .filter-wrapper {
 	width: 200px;
 	padding-right: 70px;
+
 }
 .filter-title-wrap {
 	display: flex;
@@ -895,10 +896,60 @@ body ul {
 .filter-form .button {
 	min-width: 200px;
 }
+.filter-area {
+	border: 0 none;
+}
+.filter-area-title {
+	margin-left: -10px;
+	padding-top: 10px;
+	min-width: 200px;
+	border-top: 2px solid #000000;
+}
 .filter-area legend {
 	color: #000000;
 	font-size: 18px;
 }
+.range-controls {
+	position: relative;
+	padding-bottom: 10px;
+}
+.range-controls .scale {
+	margin-top: 30px;
+	margin-left: -10px;
+	min-width: 200px;
+	height: 2px;
+	background-color: #dbdbdb;
+}
+.range-controls .bar {
+	width: 120px;
+	height: 2px;
+	background-color: #91c92f;
+}
+.range-controls .toggle {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.range-controls .toggle:active {
+	width: 5px;
+	height: 5px;
+}
+
+.range-controls .toggle-min {
+  left: -17px;
+}
+.range-controls .toggle-max {
+  left: 95px;
+}
+
 .range-control label {
 	color: rgba(0, 0, 0, 0.2);
 	font-family: "Open Sans Light", Arial, sans-serif;
@@ -910,8 +961,17 @@ body ul {
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
+	width: 50px;
 	border: none;
 	background-color: transparent;
+}
+.range-control {
+	display: inline-block;
+	margin-bottom: 25px;
+}
+.range-control-min {
+	margin-left: -12px;
+	margin-right: 20px;
 }
 .color-list,
 .bluetooth-list {
@@ -919,6 +979,53 @@ body ul {
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 40px;
+	list-style: none;
+	margin-bottom: 20px;
+}
+.color-item,
+.bluetooth-item {
+	position: relative;
+	margin-left: 25px;
+}
+.color-item:first-child,
+.bluetooth-item:first-child {
+	margin-top: 15px;
+}
+.color-item::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: -40px;
+	width: 24px;
+	height: 24px;
+	background-image: url("../img/svg/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.color-checked::before {
+	width: 28px;
+	height: 24px;
+	background-image: url("../img/svg/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bluetooth-item::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: -40px;
+	width: 26px;
+	height: 26px;
+	background-image: url("../img/svg/radio-off.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bluetooth-checked::before {
+	width: 26px;
+	height: 26px;
+	background-image: url("../img/svg/radio-on.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
@@ -1054,6 +1161,24 @@ body ul {
 	font-family: "Gilroy Light", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
+}
+.product-new {
+	position: relative;
+}
+.product-new::before {
+	content: "new";
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24px;
+	opacity: 0.2;
+	border: 2px solid #000000;
+	border-radius: 50%;
+	padding: 15px 0;
+	width: 55px;
+	text-align: center;
 }
 .ghost-button {
 	color: rgba(0, 0, 0, 0.6);

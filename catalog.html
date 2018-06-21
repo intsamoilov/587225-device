@@ -109,13 +109,26 @@
 						<legend class="filter-area-title">Стоимость</legend>
 						<div class="range">
 							<div class="range-scale">
-								<div class="range-control range-control-min">
-									<label class="range-control-label">от <input class="range-control-value" type="number" name="min-price" value="0"></label>
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="toggle toggle-min"></div>
+									<div class="toggle toggle-max"></div>
 								</div>
-								<div class="range-selection">
-								</div>
-								<div class="range-control range-control-max">
-									<label class="range-control-label">до <input class="range-control-value" type="number" name="max-price" value="5000"></label>
+								<div class="price-controls">
+									<div class="range-control range-control-min">
+										<label class="range-control-label">
+											от 
+											<input class="range-control-value" type="number" name="min-price" value="0">
+										</label>
+									</div>
+									<div class="range-control range-control-max">
+										<label class="range-control-label">
+											до 
+											<input class="range-control-value" type="number" name="max-price" value="5000">
+										</label>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -123,16 +136,16 @@
 					<fieldset class="filter-area">
 						<legend class="filter-area-title">Цвет</legend>
 						<ul class="color-list">
-							<li class="color-item">
+							<li class="color-item color-checked">
 								<label class="color-label"><input class="visually-hidden" type="checkbox" name="color-black" checked>Черный</label>
 							</li>
 							<li class="color-item">
 								<label class="color-label"><input class="visually-hidden" type="checkbox" name="color-white" >Белый</label>
 							</li>
-							<li class="color-item">
+							<li class="color-item color-checked">
 								<label class="color-label"><input class="visually-hidden" type="checkbox" name="color-blue" checked>Синий</label>
 							</li>
-							<li class="color-item">
+							<li class="color-item color-checked">
 								<label class="color-label"><input class="visually-hidden" type="checkbox" name="color-red" checked>Красный</label>
 							</li>
 							<li class="color-item">
@@ -143,7 +156,7 @@
 					<fieldset class="filter-area">
 						<legend class="filter-area-title">Bluetooth</legend>
 						<ul class="bluetooth-list">
-							<li class="bluetooth-item">
+							<li class="bluetooth-item  bluetooth-checked">
 								<label class="bluetooth-label"><input class="visually-hidden" type="radio" name="Bluetooth" value="true" checked>Есть</label>
 							</li>
 							<li class="bluetooth-item">
@@ -202,7 +215,7 @@
 							<button class="ghost-button" type="button">Добавить к сравнению</button>
 						</div>
 					</li>
-					<li class="products-item">
+					<li class="products-item product-new">
 						<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
 						<div class="price-wrap flex-container">
 							<a class="produсts-item-title" href="catalog.html/follow-me-selfi-stick">Селфи-палка «Следуй за мной»</a>
