@@ -14,14 +14,15 @@
 			</svg>
 		</div>
 		<div class="header-row flex-container">
-			<form class="header-search" action="http://echo.htmlacademy.ru" method="get">
-				<label class="search-area-label"><input class="search-area" type="search" name="search"  placeholder="Поиск по сайту"></label>
+			<form class="search flex-container" action="http://echo.htmlacademy.ru" method="get">
+				<input class="search-input" id="search" type="search" name="search"  placeholder="Поиск по сайту">
 				<button class="search-button">Найти</button>
+				<label class="search-input-label" for="search"></label>
 			</form>	
 			<ul class="action-list flex-container">
-				<li class="action-item first">
+				<li class="action-item">
 					<a href="#">
-						<svg width="13" height="12">
+						<svg class="action-icon" width="13" height="12">
 							<use xlink:href="#user"/>
 						</svg>
 						Войти
@@ -29,15 +30,15 @@
 				</li>
 				<li class="action-item">
 					<a href="#">
-						<svg width="10" height="10">
+						<svg class="action-icon" width="10" height="10">
 							<use xlink:href="#compare"/>
 						</svg>
 						Сравнить
 					</a>
 				</li>
-				<li class="action-item last">
+				<li class="action-item">
 					<a href="#">
-						<svg width="12" height="12">
+						<svg class="action-icon" width="12" height="12">
 							<use xlink:href="#cart"/>
 						</svg>
 						Корзина
@@ -47,7 +48,10 @@
 		</div>
 		<nav class="header-nav flex-container">
 			<div class="header-catalog">
-				<a href="catalog.html" class="header-catalog-title">Каталог товаров</a>
+				<a href="catalog.html" class="header-catalog-title">
+					Каталог товаров
+					<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16" alt="плюс">
+				</a>
 				<ul class="dropdown flex-container">
 					<li class="dropdown-item">
 						<ul class="header-catalog-list">
@@ -89,25 +93,30 @@
 						<img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
 					</div>	
 					<div class="slide-content flex-container">
+						<p class="slide-number">01</p>
 						<p class="tag-line"><b>Делай селфи,<br> как Бен Стиллер!</b></p>
-						<p class="info">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+						<p class="info">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 						<div class="slider-buttons flex-container">	
 							<a class="button info-btn" href="#">Подробнее</a>
-							<button class="slider-btn" type="button">Слайдер 1</button>
+							<button class="slider-btn checked" type="button">Слайдер 1</button>
 							<button class="slider-btn" type="button">Слайдер 2</button>
 							<button class="slider-btn" type="button">Слайдер 3</button>
 						</div>
 						<table class="slider-info">
-							<tr>
-								<th>Длина палки</th>
-								<th>Вес палки</th>
-								<th>Материал</th>
-							</tr>
-							<tr>
-								<td>8,5 м</td>
-								<td>5 кг</td>
-								<td>Карбон</td>
-							</tr>
+							<tfoot>
+								<tr>
+									<th>Длина палки</th>
+									<th>Вес палки</th>
+									<th>Материал</th>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<td>8,5 м</td>
+									<td>5 кг</td>
+									<td>Карбон</td>	
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>
@@ -117,16 +126,26 @@
 						<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
 					</div>
 					<div class="slide-content flex-container">
+						<p class="slide-number">02</p>
 						<p class="tag-line"><b>Худеем<br> правильно!</b></p>
-						<p class="info">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-						<a class="button" href="#">Подробнее</a>
+						<p class="info">Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
+						<div class="slider-buttons flex-container">	
+							<a class="button info-btn" href="#">Подробнее</a>
+							<button class="slider-btn" type="button">Слайдер 1</button>
+							<button class="slider-btn checked" type="button">Слайдер 2</button>
+							<button class="slider-btn" type="button">Слайдер 3</button>
+						</div>
 						<table class="slider-info">
-							<tr>
-								<th>Без подзарядки</th>
-							</tr>
-							<tr>
-								<td>48 часов</td>
-							</tr>
+							<tfoot>	
+								<tr>
+									<th>Без подзарядки</th>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<td>48 часов</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>
@@ -136,18 +155,28 @@
 						<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
 					</div>
 					<div class="slide-content flex-container">
+						<p class="slide-number">03</p>
 						<p class="tag-line"><b>Порхает как бабочка,<br> жалит как пчела!</b></p>
-						<p class="info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-						<a class="button" href="#">Подробнее</a>
+						<p class="info">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
+						<div class="slider-buttons flex-container">		
+							<a class="button info-btn" href="#">Подробнее</a>
+							<button class="slider-btn" type="button">Слайдер 1</button>
+							<button class="slider-btn" type="button">Слайдер 2</button>
+							<button class="slider-btn checked" type="button">Слайдер 3</button>
+						</div>
 						<table class="slider-info">
-							<tr>
-								<th>Дальность полета</th>
-								<th>Радиус поражения</th>
-							</tr>
-							<tr>
-								<td>800 м</td>
-								<td>50 м</td>
-							</tr>
+							<tfoot>
+								<tr>
+									<th>Дальность полета</th>
+									<th>Радиус поражения</th>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<td>800 м</td>
+									<td>50 м</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</div>
@@ -165,7 +194,7 @@
 				<li class="graphic-catalog-item">
 					<a class="item-link" href="catalog.html">
 						<div class="item-background flex-container"><img src="img/svg/popular-2.svg" width="86" height="117" alt="Моноподы"></div>
-						<p class="item-title"><b>Моноподы для селфи</b></p>
+						<p class="item-title"><b>Моноподы</br> для селфи</b></p>
 					</a>
 				</li>
 				<li class="graphic-catalog-item">
@@ -205,20 +234,20 @@
 				<div class="main-services-wrap flex-container">
 					<div class="main-services-info service-1">
 						<h3 class="title">Доставка</h3>
-						<p>
-							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+						<p class="text">
+							Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.
 						</p>
 					</div>
 					<div class="main-services-info service-2">
 						<h3 class="title">Гарантия</h3>
-						<p>
-							Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+						<p class="text">
+							Если из-за возгорания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.
 						</p>
 					</div>
 					<div class="main-services-info service-3">
 						<h3 class="title">Кредит</h3>
-						<p>
-							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+						<p class="text">
+							Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.
 						</p>
 					</div>
 				</div>
@@ -236,12 +265,12 @@
 		<section class="main-feature flex-container container">
 			<div class="feature-about-us flex-container">
 				<h2 class="title">О нас</h2>
-				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>   
-				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями</p>
+				<p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>   
+				<p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями</p>
 				<ul class="feature-about-us-list">
-					<li>Деловые Линии</li>
-					<li>Автотрейдинг</li>
-					<li>ЖелДорЭкспедиция</li>
+					<li class="feature-about-us-item">Деловые Линии</li>
+					<li class="feature-about-us-item">Автотрейдинг</li>
+					<li class="feature-about-us-item">ЖелДорЭкспедиция</li>
 				</ul>
 				<a href="#" class="button btn-about-us">Подробнее о нас</a>
 			</div>
@@ -264,7 +293,7 @@
 				<ul class="action-list flex-container">
 					<li class="action-item">
 						<a class="action-link" href="#">
-							<svg width="13" height="12">
+							<svg class="action-icon" width="13" height="12">
 								<use xlink:href="#user"/>
 							</svg>
 							Войти
@@ -272,7 +301,7 @@
 					</li>
 					<li class="action-item">
 						<a class="action-link" href="#">
-							<svg width="10" height="10">
+							<svg class="action-icon" width="10" height="10">
 								<use xlink:href="#compare"/>
 							</svg>
 							Сравнить
@@ -280,7 +309,7 @@
 					</li>
 					<li class="action-item">
 						<a class="action-link" href="#">
-							<svg width="12" height="12">
+							<svg class="action-icon" width="12" height="12">
 								<use xlink:href="#cart"/>
 							</svg>
 							Корзина
@@ -298,11 +327,11 @@
 				<p>Тел.: +7 (495) 495-95-95</p>
 			</div>
 			<div class="footer-bottom flex-container">
-				<ul class="footer-social-list flex-container">
-					<li class="footer-social-item"><a class="footer-social-link" href="#">Facebook</a></li>
-					<li class="footer-social-item"><a class="footer-social-link" href="#">Instagram</a></li>
-					<li class="footer-social-item"><a class="footer-social-link" href="#">Twitter</a></li>
-				</ul>
+				<div class="footer-socials flex-container">
+					<a class="social social-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+					<a class="social social-inst" href="#"><span class="visually-hidden">Instagram</a></span></li>
+					<a class="social social-tw" href="#"><span class="visually-hidden">Twitter</a></span></li>
+				</div>
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
 					<svg class="logo-html" width="27" height="35">
 						<use xlink:href="#html-logo"/>
