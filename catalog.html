@@ -57,7 +57,7 @@
 			<div class="header-catalog">
 				<a href="catalog.html" class="header-catalog-title">
 					Каталог товаров
-					<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16">
+					<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16" alt="плюс">
 				</a>
 				<ul class="dropdown flex-container">
 					<li class="dropdown-item">
@@ -120,13 +120,13 @@
 									<div class="range-control range-control-min">
 										<label class="range-control-label">
 											от 
-											<input class="range-control-value" type="number" name="min-price" value="0">
+											<input class="range-control-value" type="number" name="min-price" value="0" min="0">
 										</label>
 									</div>
 									<div class="range-control range-control-max">
 										<label class="range-control-label">
 											до 
-											<input class="range-control-value" type="number" name="max-price" value="5000">
+											<input class="range-control-value" type="number" name="max-price" value="5000" max="10000">
 										</label>
 									</div>
 								</div>
@@ -136,31 +136,38 @@
 					<fieldset class="filter-area">
 						<legend class="filter-area-title">Цвет</legend>
 						<ul class="color-list">
-							<li class="color-item color-checked">
-								<label class="color-label"><input class="visually-hidden" type="checkbox" name="color-black" checked>Черный</label>
+							<li class="color-item">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-black" id="color-black" checked>
+								<label class="color-label" for="color-black">Черный</label>
 							</li>
 							<li class="color-item">
-								<label class="color-label"><input class="visually-hidden" type="checkbox" name="color-white" >Белый</label>
-							</li>
-							<li class="color-item color-checked">
-								<label class="color-label"><input class="visually-hidden" type="checkbox" name="color-blue" checked>Синий</label>
-							</li>
-							<li class="color-item color-checked">
-								<label class="color-label"><input class="visually-hidden" type="checkbox" name="color-red" checked>Красный</label>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-white" id="color-white">
+								<label class="color-label" for="color-white">Белый</label>
 							</li>
 							<li class="color-item">
-								<label class="color-label"><input class="visually-hidden" type="checkbox" name="color-pink" >Розовый</label>
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-blue" id="color-blue" checked>
+								<label class="color-label" for="color-blue">Синий</label>
+							</li>
+							<li class="color-item">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-red" id="color-red" checked>
+								<label class="color-label" for="color-red">Красный</label>
+							</li>
+							<li class="color-item">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-pink" id="color-pink">
+								<label class="color-label" for="color-pink">Розовый</label>
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset class="filter-area">
 						<legend class="filter-area-title">Bluetooth</legend>
 						<ul class="bluetooth-list">
-							<li class="bluetooth-item  bluetooth-checked">
-								<label class="bluetooth-label"><input class="visually-hidden" type="radio" name="Bluetooth" value="true" checked>Есть</label>
+							<li class="bluetooth-item">
+								<input class="visually-hidden filter-radio" type="radio" name="Bluetooth" id="Bluetooth-off" value="true" checked>
+								<label class="bluetooth-label" for="Bluetooth-off">Есть</label>
 							</li>
 							<li class="bluetooth-item">
-								<label class="bluetooth-label"><input class="visually-hidden" type="radio" name="Bluetooth" value="false">Нет</label>
+								<input class="visually-hidden filter-radio" type="radio" name="Bluetooth" id="Bluetooth-on" value="false">
+								<label class="bluetooth-label" for="Bluetooth-on">Нет</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -176,14 +183,16 @@
 							<li class="products-sort-item"><a href="#">По цене</a></li>
 							<li class="products-sort-item"><a href="#">По типу</a></li>
 							<li class="products-sort-item"><a href="#">По популярности</a></li>
-							<li class="products-sort-item sort-type sort-up"><a href="#">По возраст</a></li>
-							<li class="products-sort-item sort-type sort-down"><a href="#">По убыв</a></li>
+							<li class="products-sort-item sort-type"><a class="sort-up" href="#">По возраст</a></li>
+							<li class="products-sort-item sort-type"><a class="sort-down sort-active" href="#">По убыв</a></li>
 						</ul>
 					</div>
 				</div>
 				<ul class="products-list flex-container">
 					<li class="products-item">
-						<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+						<div class="produсts-item-image">
+							<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+						</div>
 						<div class="price-wrap flex-container">
 							<a class="produсts-item-title" href="catalog.html/amateur-selfi-stick">Любительская селфи-палка</a>
 							<p class="produсts-item-price">500 руб.</p>
@@ -194,7 +203,9 @@
 						</div>
 					</li>
 					<li class="products-item">
-						<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+						<div class="produсts-item-image">
+							<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+						</div>
 						<div class="price-wrap flex-container">
 							<a class="produсts-item-title" href="catalog.html/professional-selfi-stick">Профессиональная<br> селфи-палка</a>
 							<p class="produсts-item-price">1 500 руб</p>
@@ -205,7 +216,9 @@
 						</div>
 					</li>
 					<li class="products-item">
-						<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+						<div class="produсts-item-image">
+							<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+						</div>
 						<div class="price-wrap flex-container">
 							<a class="produсts-item-title" href="catalog.html/unsinkable-selfi-stick">Непотопляемая селфи-палка</a>
 							<p class="produсts-item-price">2 500 руб.</p>
@@ -216,7 +229,9 @@
 						</div>
 					</li>
 					<li class="products-item product-new">
-						<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+						<div class="produсts-item-image">
+							<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+						</div>
 						<div class="price-wrap flex-container">
 							<a class="produсts-item-title" href="catalog.html/follow-me-selfi-stick">Селфи-палка «Следуй за мной»</a>
 							<p class="produсts-item-price">4 900 руб.</p>
@@ -288,9 +303,9 @@
 			</div>
 			<div class="footer-bottom flex-container">
 				<div class="footer-socials flex-container">
-					<a class="social social-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
-					<a class="social social-inst" href="#"><span class="visually-hidden">Instagram</a></span></li>
-					<a class="social social-tw" href="#"><span class="visually-hidden">Twitter</a></span></li>
+					<a class="social social-fb" href="#"><span class="visually-hidden">Facebook</span></a>
+					<a class="social social-inst" href="#"><span class="visually-hidden">Instagram</span></a>
+					<a class="social social-tw" href="#"><span class="visually-hidden">Twitter</span></a>
 				</div>
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
 					<svg class="logo-html" width="27" height="35">
