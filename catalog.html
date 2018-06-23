@@ -57,7 +57,7 @@
 			<div class="header-catalog">
 				<a href="catalog.html" class="header-catalog-title">
 					Каталог товаров
-					<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16" alt="плюс">
+					<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16" alt="Все товары">
 				</a>
 				<ul class="dropdown flex-container">
 					<li class="dropdown-item">
@@ -120,13 +120,13 @@
 									<div class="range-control range-control-min">
 										<label class="range-control-label">
 											от 
-											<input class="range-control-value" type="number" name="min-price" value="0" min="0">
+											<input class="range-control-value" type="number" name="min-price" value="0" min="0" max="10000">
 										</label>
 									</div>
 									<div class="range-control range-control-max">
 										<label class="range-control-label">
 											до 
-											<input class="range-control-value" type="number" name="max-price" value="5000" max="10000">
+											<input class="range-control-value" type="number" name="max-price" value="5000" min="0" max="10000">
 										</label>
 									</div>
 								</div>
@@ -135,39 +135,39 @@
 					</fieldset>
 					<fieldset class="filter-area">
 						<legend class="filter-area-title">Цвет</legend>
-						<ul class="color-list">
-							<li class="color-item">
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-black" id="color-black" checked>
-								<label class="color-label" for="color-black">Черный</label>
+						<ul class="filter-list">
+							<li class="filter-item">
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="color-black" id="color-black" checked>
+								<label class="checkbox-label" for="color-black">Черный</label>
 							</li>
-							<li class="color-item">
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-white" id="color-white">
-								<label class="color-label" for="color-white">Белый</label>
+							<li class="filter-item">
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="color-white" id="color-white">
+								<label class="checkbox-label" for="color-white">Белый</label>
 							</li>
-							<li class="color-item">
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-blue" id="color-blue" checked>
-								<label class="color-label" for="color-blue">Синий</label>
+							<li class="filter-item">
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="color-blue" id="color-blue" checked>
+								<label class="checkbox-label" for="color-blue">Синий</label>
 							</li>
-							<li class="color-item">
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-red" id="color-red" checked>
-								<label class="color-label" for="color-red">Красный</label>
+							<li class="filter-item">
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="color-red" id="color-red" checked>
+								<label class="checkbox-label" for="color-red">Красный</label>
 							</li>
-							<li class="color-item">
-								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="color-pink" id="color-pink">
-								<label class="color-label" for="color-pink">Розовый</label>
+							<li class="filter-item">
+								<input class="visually-hidden filter-checkbox" type="checkbox" name="color-pink" id="color-pink">
+								<label class="checkbox-label" for="color-pink">Розовый</label>
 							</li>
 						</ul>
 					</fieldset>
 					<fieldset class="filter-area">
 						<legend class="filter-area-title">Bluetooth</legend>
-						<ul class="bluetooth-list">
-							<li class="bluetooth-item">
+						<ul class="filter-list">
+							<li class="filter-item">
 								<input class="visually-hidden filter-radio" type="radio" name="Bluetooth" id="Bluetooth-off" value="true" checked>
-								<label class="bluetooth-label" for="Bluetooth-off">Есть</label>
+								<label class="radio-label" for="Bluetooth-off">Есть</label>
 							</li>
-							<li class="bluetooth-item">
+							<li class="filter-item">
 								<input class="visually-hidden filter-radio" type="radio" name="Bluetooth" id="Bluetooth-on" value="false">
-								<label class="bluetooth-label" for="Bluetooth-on">Нет</label>
+								<label class="radio-label" for="Bluetooth-on">Нет</label>
 							</li>
 						</ul>
 					</fieldset>

@@ -73,6 +73,9 @@ body ul {
 .flex-container {
 	display: flex;
 }
+.hidden {
+	display: none;
+}
 .text {
 	margin: 0;
 	padding: 0;
@@ -474,10 +477,6 @@ body ul {
 .slide {
 	justify-content: flex-start;
 }
-.slide-2,
-.slide-3{
-	display: none;
-}
 .slide-image {
 	margin: auto;
 	padding-left: 10px;
@@ -519,10 +518,14 @@ body ul {
 	margin-right: 85px;
 }
 .slider-info {
-	flex-direction: column-reverse;
-	align-self: flex-start;
 	border-collapse: collapse;
 	text-align: left;
+}
+.table-value {
+	display: table-header-group;
+}
+.table-description {
+	display: table-footer-group;
 }
 .slider-info td {
 	padding-right: 77px;
@@ -661,10 +664,6 @@ body ul {
 	background-image: url("../img/svg/credit.svg");
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
-}
-.service-2,
-.service-3 {
-	display: none;
 }
 
 /*** Бренды
@@ -978,8 +977,7 @@ body ul {
 	margin-left: -12px;
 	margin-right: 20px;
 }
-.color-list,
-.bluetooth-list {
+.filter-list {
 	color: rgba(0, 0, 0, 1);
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 14px;
@@ -987,23 +985,21 @@ body ul {
 	list-style: none;
 	margin-bottom: 20px;
 }
-.color-item,
-.bluetooth-item {
+.filter-item {
 	position: relative;
 	margin-left: 25px;
 }
-.color-item:first-child,
-.bluetooth-item:first-child {
+.filter-item:first-child {
 	margin-top: 15px;
 }
-.color-label,
-.bluetooth-label {
+.checkbox-label,
+.radio-label {
 	position: relative;
 	display: block;
 	cursor: pointer;
 	user-select: none;
 }
-.filter-input-checkbox + .color-label::before {
+.filter-checkbox + .checkbox-label::before {
 	content: "";
 	position: absolute;
 	top: 7px;
@@ -1014,20 +1010,24 @@ body ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.filter-input-checkbox:checked + .color-label::before {
+.filter-checkbox:checked + .checkbox-label::before {
 	width: 28px;
 	height: 24px;
 	background-image: url("../img/svg/checkbox-on.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.filter-input-checkbox:hover + .color-label::before,
-.filter-input-checkbox:focus + .color-label::before,
-.filter-radio:hover + .bluetooth-label::before,
-.filter-radio:focus + .bluetooth-label::before {
+.filter-checkbox:hover + .checkbox-label::before,
+.filter-checkbox:focus + .checkbox-label::before,
+.filter-radio:hover + .radio-label::before,
+.filter-radio:focus + .radio-label::before {
 	opacity: 0.6;
 }
-.filter-radio + .bluetooth-label::before {
+.filter-checkbox:active + .checkbox-label::before,
+.filter-radio:active + .radio-label::before {
+	opacity: 1;
+}
+.filter-radio + .radio-label::before {
 	content: "";
 	position: absolute;
 	top: 7px;
@@ -1038,13 +1038,22 @@ body ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.filter-radio:checked + .bluetooth-label::before {
+.filter-radio:checked + .radio-label::before {
 	width: 26px;
 	height: 26px;
 	background-image: url("../img/svg/radio-on.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.filter-checkbox:disabled + .checkbox-label::before,
+.filter-radio:disabled + .radio-label::before {
+	opacity: 0.25;
+}
+.filter-checkbox:disabled + .checkbox-label,
+.filter-radio:disabled + .radio-label {
+	color: #a6a6a6;
+}
+
 
 /*** Страница каталога
 ========================*/
@@ -1196,6 +1205,7 @@ body ul {
 }
 .product-new::before {
 	content: "new";
+	z-index: 10;
 	position: absolute;
 	right: 30px;
 	top: 30px;

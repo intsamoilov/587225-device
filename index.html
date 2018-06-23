@@ -50,7 +50,7 @@
 			<div class="header-catalog">
 				<a href="catalog.html" class="header-catalog-title">
 					Каталог товаров
-					<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16" alt="плюс">
+					<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16" alt="Все товары">
 				</a>
 				<ul class="dropdown flex-container">
 					<li class="dropdown-item">
@@ -102,25 +102,21 @@
 							<button class="slider-btn" type="button">Слайдер 2</button>
 							<button class="slider-btn" type="button">Слайдер 3</button>
 						</div>
-						<table class="slider-info flex-container">
-							<tbody>
-								<tr>
-									<th>Длина палки</th>
-									<th>Вес палки</th>
-									<th>Материал</th>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td>8,5 м</td>
-									<td>5 кг</td>
-									<td>Карбон</td>	
-								</tr>
-							</tfoot>
+						<table class="slider-info">
+							<tr class="table-description">
+								<th>Длина палки</th>
+								<th>Вес палки</th>
+								<th>Материал</th>
+							</tr>
+							<tr class="table-value">
+								<td>8,5 м</td>
+								<td>5 кг</td>
+								<td>Карбон</td>	
+							</tr>
 						</table>
 					</div>
 				</div>
-				<div class="slide slide-2 flex-container">
+				<div class="slide slide-2 flex-container hidden">
 					<h3 class="visually-hidden">Фитнес-браслет</h3>
 					<div class="slide-image">
 						<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
@@ -136,20 +132,16 @@
 							<button class="slider-btn" type="button">Слайдер 3</button>
 						</div>
 						<table class="slider-info">
-							<tbody>	
-								<tr>
-									<th>Без подзарядки</th>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td>48 часов</td>
-								</tr>
-							</tfoot>
+							<tr class="table-description">
+								<th>Без подзарядки</th>
+							</tr>
+							<tr class="table-value">
+								<td>48 часов</td>
+							</tr>
 						</table>
 					</div>
 				</div>
-				<div class="slide  slide-3  flex-container">
+				<div class="slide  slide-3  flex-container hidden">
 					<h3 class="visually-hidden">Квадрокоптер</h3>
 					<div class="slide-image">
 						<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
@@ -165,18 +157,14 @@
 							<button class="slider-btn checked" type="button">Слайдер 3</button>
 						</div>
 						<table class="slider-info">
-							<tbody>
-								<tr>
-									<th>Дальность полета</th>
-									<th>Радиус поражения</th>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td>800 м</td>
-									<td>50 м</td>
-								</tr>
-							</tfoot>
+							<tr class="table-description">
+								<th>Дальность полета</th>
+								<th>Радиус поражения</th>
+							</tr>
+							<tr class="table-value">
+								<td>800 м</td>
+								<td>50 м</td>
+							</tr>
 						</table>
 					</div>
 				</div>
@@ -238,13 +226,13 @@
 							Мы с удовольствием доставим ваш товар прямо к вашему<br> подъезду совершенно бесплатно! Ведь мы неплохо<br> заработаем, поднимая его на ваш этаж.
 						</p>
 					</div>
-					<div class="main-services-info service-2">
+					<div class="main-services-info service-2 hidden">
 						<h3 class="title">Гарантия</h3>
 						<p class="text">
 							Если из-за возгорания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.
 						</p>
 					</div>
-					<div class="main-services-info service-3">
+					<div class="main-services-info service-3 hidden">
 						<h3 class="title">Кредит</h3>
 						<p class="text">
 							Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.
