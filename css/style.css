@@ -992,8 +992,7 @@ body ul {
 .filter-item:first-child {
 	margin-top: 15px;
 }
-.checkbox-label,
-.radio-label {
+.filter-label {
 	position: relative;
 	display: block;
 	cursor: pointer;
@@ -1017,14 +1016,14 @@ body ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.filter-checkbox:hover + .checkbox-label::before,
-.filter-checkbox:focus + .checkbox-label::before,
-.filter-radio:hover + .radio-label::before,
-.filter-radio:focus + .radio-label::before {
+.filter-checkbox:hover + .filter-label::before,
+.filter-checkbox:focus + .filter-label::before,
+.filter-radio:hover + .filter-label::before,
+.filter-radio:focus + .filter-label::before {
 	opacity: 0.6;
 }
-.filter-checkbox:active + .checkbox-label::before,
-.filter-radio:active + .radio-label::before {
+.filter-checkbox:active + .filter-label::before,
+.filter-radio:active + .filter-label::before {
 	opacity: 1;
 }
 .filter-radio + .radio-label::before {
