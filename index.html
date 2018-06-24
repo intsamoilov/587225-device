@@ -328,28 +328,26 @@
 			</div>
 		</div>
 	</footer>
-	<section class="modal modal-form flex-container">
-		<h2 class="visually-hidden">Форма обратной связи</h2>
-		<form class="modal-form-feedback flex-container" method="post" action="https://echo.htmlacademy.ru">
-			<div class="form-wrap flex-container">
-				<div class="form-name">
-					<label class="name-label">Ваше имя:<br><input class="modal-input" type="text" name="name" placeholder="Имя Фамилия" required></label>
+	<section class="modal flex-container hidden">
+		<div class="modal-form flex-container hidden">	
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<form class="modal-form-feedback flex-container" method="post" action="https://echo.htmlacademy.ru">
+				<div class="form-wrap flex-container">
+					<label class="modal-label">Ваше имя:<br><input class="modal-input" type="text" name="name" placeholder="Имя Фамилия" required></label>
+					<label class="modal-label">Ваш e-mail:<br><input class="modal-input" type="email" name="email" placeholder="email@example.com"></label>
 				</div>
-				<div class="form-mail">
-					<label class="mail-label">Ваш e-mail:<br><input class="modal-input" type="email" name="email" placeholder="email@example.com"></label>
+				<div class="form-text">
+					<label class="modal-label">Текст письма:<br><textarea class="modal-input" name="message" placeholder="В свободной форме"></textarea></label>
 				</div>
-			</div>
-			<div class="form-text">
-				<label class="text-label">Текст письма:<br><textarea class="modal-input" name="message" placeholder="В свободной форме"></textarea></label>
-			</div>
-			<button class="button btn-send" type="submit">Отправить</button>
-		</form>
-		<button class="modal-close visually-hidden" type="button">Закрыть</button>
-	</section>
-	<section class="modal modal-map">
-		<h2 class="visually-hidden">Мы на карте</h2>
-		<div class="map"></div>
-		<button class="modal-close visually-hidden" type="button">Закрыть</button>
+				<button class="button btn-send" type="submit">Отправить</button>
+			</form>
+			<button class="modal-close" type="button">Закрыть</button>
+		</div>
+		<div class="modal-map hidden">
+			<h2 class="visually-hidden">Мы на карте</h2>
+			<div class="map"></div>
+			<button class="modal-close" type="button">Закрыть</button>
+		</div>
 	</section>
 	<svg style="display: none">
 	<symbol id="logo" viewbox="0 0 164 34.09">
