@@ -836,7 +836,7 @@ body ul {
 .modal-input {
 	box-sizing: border-box;
 	width: 360px;
-	padding: 13px 0 13px 20px;
+	padding: 13px 20px;
 	color: #464646;
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 14px;
