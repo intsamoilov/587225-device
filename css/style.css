@@ -799,16 +799,11 @@ body ul {
 	background-repeat: no-repeat;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-/*.map {
-	width: 960px;
-	height: 559px;
-}*/
 /*** Модальная форма
 ========================*/
 .modal-form {
 	position: relative;
 	width: 760px;
-	min-width: 555px;
 	padding: 93px 100px 75px;
 	background-color: #ffffff;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -820,31 +815,37 @@ body ul {
 }
 .form-wrap {
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 35px;
 }
-
 .btn-send {
 	width: 200px;
 }
 .modal-form-feedback {
 	flex-direction: column;
 }
+.label-title {
+	display: block;
+	margin-bottom: 5px;
+}
 .modal-input {
 	box-sizing: border-box;
 	width: 360px;
-	margin-top: 5px;
-	margin-right: 40px;
 	padding: 13px 0 13px 20px;
 	color: #464646;
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
-	border: 3px solid transparent;
+	border: 2px solid transparent;
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.5);
 }
+.form-wrap label:nth-child(2n+1) {
+	margin-right: 40px;
+}
 .form-text .modal-input {
-	width: 760px;
+	margin-right: 0;
+	width: 100%;
 	min-height: 155px;
 	resize: none;
 	margin-bottom: 35px;
@@ -858,7 +859,7 @@ body ul {
 	background-color: #ffffff;
 	border: 2px solid #f7e296;
 }
-.modal-input:invalid {
+.modal-input:invalid:focus {
 	background-color: rgba(237, 181, 181, 0.5);
 
 }
