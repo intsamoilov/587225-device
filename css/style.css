@@ -812,11 +812,16 @@ body ul {
 	color: #000000;
 	font-size: 18px;
 	line-height: 24px;
+
+}
+.modal-label {
+	display: block;
+	margin-bottom: 15px;	
 }
 .form-wrap {
 	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-bottom: 35px;
+	margin-bottom: 20px;
 }
 .btn-send {
 	width: 200px;
@@ -840,15 +845,13 @@ body ul {
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.5);
 }
-.form-wrap label:nth-child(2n+1) {
+.form-wrap .modal-label-half:nth-child(2n+1) {
 	margin-right: 40px;
 }
-.form-text .modal-input {
-	margin-right: 0;
+.modal-textarea {
 	width: 100%;
-	min-height: 155px;
+	height: 155px;
 	resize: none;
-	margin-bottom: 35px;
 }
 .modal-input:hover {
 	background-color: rgba(230, 230, 230, 0.8);
