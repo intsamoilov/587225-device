@@ -2,7 +2,7 @@
 
 var formLink = document.querySelector(".btn-write-us");
 var modal = document.querySelector(".modal");
-var modalForm = document.querySelector(".modal-form");
+var modalForm = modal.querySelector(".modal-form");
 var formFeedback = modalForm.querySelector(".modal-form-feedback");
 var modalFormClose = modalForm.querySelector(".modal-close");
 var formName = modalForm.querySelector("[name=name]");
@@ -10,14 +10,12 @@ var formEmail = modalForm.querySelector("[name=email]");
 var formText = modalForm.querySelector("[name=message]");
 
 var mapLink = document.querySelector(".small-map");
-var modalMap = document.querySelector(".modal-map");
+var modalMap = modal.querySelector(".modal-map");
 var modalMapClose = modalMap.querySelector(".modal-close");
 
 var isStorageSupport = true;
 var storageName = "";
 var storageEmail = "";
-
-/*========================================================================*/
 
 try {
 	storageName = localStorage.getItem("name");
@@ -25,8 +23,6 @@ try {
 } catch (err) {
 	isStorageSupport = false;
 }
-
-/*========================================================================*/
 
 formLink.addEventListener("click", function(evt) {
 	evt.preventDefault();
@@ -40,6 +36,7 @@ formLink.addEventListener("click", function(evt) {
 		formName.focus();
 	}
 });
+
 modalFormClose.addEventListener("click", function(evt) {
 	evt.preventDefault();
 	modal.classList.remove("modal-show");
@@ -49,16 +46,15 @@ modalFormClose.addEventListener("click", function(evt) {
 formFeedback.addEventListener("submit", function(evt) {
 	if (!formName.value || !formEmail.value) {
 		evt.preventDefault();
-		/*modalForm.classList.remove("modal-error");
-		modalForm.offsetWidth = modalForm.offsetWidth;*/
+		modalForm.classList.remove("modal-error");
+		modalForm.width = modalForm.offsetWidth;
 		modalForm.classList.add("modal-error");
-	} else {
-		if (isStorageSupport) {
-			localStorage.setItem("name", formName.value);
-			localStorage.setItem("email", formEmail.value);
-		}
+	} else if (isStorageSupport) {
+		localStorage.setItem("name", formName.value);
+		localStorage.setItem("email", formEmail.value);
 	}
 });
+
 window.addEventListener("keydown", function(evt) {
 	if (evt.keyCode == 27 && modalForm.classList.contains("modal-show")) {
 		evt.preventDefault();
@@ -67,8 +63,6 @@ window.addEventListener("keydown", function(evt) {
 		modalForm.classList.remove("modal-error");
 	}
 });
-
-/*========================================================================*/
 
 mapLink.addEventListener("click", function(evt) {
 	evt.preventDefault();
@@ -87,8 +81,6 @@ window.addEventListener("keydown", function(evt) {
 		modalMap.classList.remove("modal-show");
 	}
 });
-
-/*========================================================================*/
 
 ymaps.ready(init);
 function init(){ 

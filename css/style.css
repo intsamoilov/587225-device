@@ -100,15 +100,7 @@ body ul {
 .hidden {
 	display: none;
 }
-.modal-show {
-	display: flex;
-	animation-name: modal-show;
-	animation-duration: 0.8s;
-}
-.modal-error {
-	animation-name: shake;
-	animation-duration: 0.6s;
-}
+
 .text {
 	margin: 0;
 	padding: 0;
@@ -532,16 +524,21 @@ body ul {
 	margin-bottom: 50px;
 }
 .slider-btn {
-	outline: none;
-	width: 12px;
-	height: 12px;
-	margin-left: 20px;
-	border: none;
+	padding: 0;
+	width: 14px;
+	height: 14px;
+	margin-left: 18px;
+	border: 1px dotted transparent;
 	color: transparent;
 	background-color: transparent;
 	background-image: url("../img/svg/slider-button-empty.svg");
+	background-repeat: no-repeat;
 	background-size: cover;
 	cursor: pointer;
+}
+.slider-btn:focus {
+	outline: none;
+	border: 1px dotted #000000;
 }
 .checked {
 	background-image: url("../img/svg/slider-button.svg");
@@ -563,6 +560,7 @@ body ul {
 .slider-info td {
 	padding-right: 77px;
 	padding-bottom: 7px;
+	text-align: left;
 	color: #000000;
 	font-family: "Gilroy Light", Arial, sans-serif;
 	font-size: 36px;
@@ -570,6 +568,7 @@ body ul {
 }
 .slider-info th {
 	padding-right: 77px;
+	text-align: left;
 	color: #000000;
 	font-family: "Open Sans Light", Arial, sans-serif;
 	font-size: 13px;
@@ -594,9 +593,10 @@ body ul {
 	list-style: none;
 }
 .item-background {
-	width: 160px;
-	height: 160px;
+	width: 158px;
+	height: 158px;
 	justify-content: center;
+	border: 1px dotted transparent;
 	align-items: center;
 	background-color: rgba(240, 197, 46, 0.5);
 }
@@ -606,7 +606,7 @@ body ul {
 }
 .item-title {
 	width: 160px;
-	margin-top: 35px;
+	margin-top: 32px;
 	margin-bottom: 0px;
 }
 .graphic-catalog-item a {
@@ -617,8 +617,12 @@ body ul {
 .item-background:focus {
 	background-color: rgba(240, 197, 46, 1);
 }
-
-
+.graphic-catalog-item a:focus {
+	outline: none;	
+}
+.graphic-catalog-item a:focus .item-background {
+	border: 1px dotted gray;
+}
 
 /*** Услуги
 ========================*/
@@ -661,6 +665,9 @@ body ul {
 	background: linear-gradient(to bottom,
 		#000000 0%,
 		#000000 100%);
+}
+.services-btn.selected:focus {
+	box-shadow: -5px 0 0 #000000;
 }
 .services-btn.selected::after {
 	position: absolute;
@@ -710,7 +717,8 @@ body ul {
 	filter: grayscale(1);
 	opacity: 0.2;
 }
-.main-brands-item:hover {
+.main-brands-item:hover,
+.main-brands-item:focus {
 	filter: grayscale(0);
 	opacity: 1;
 }
@@ -819,7 +827,15 @@ body ul {
 .modal-close:active {
 	opacity: 0.3;
 }
-
+.modal-show {
+	display: flex;
+	animation-name: modal-show;
+	animation-duration: 0.8s;
+}
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
+}
 
 /*** Модальная карта
 ========================*/
@@ -840,7 +856,7 @@ body ul {
 ========================*/
 .modal-form {
 	position: relative;
-	width: 760px;
+	min-width: 760px;
 	padding: 93px 100px 75px;
 	background-color: #ffffff;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
