@@ -68,6 +68,7 @@ body {
 .container {
 	width: 1160px;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 a {
 	text-decoration: none;
@@ -101,7 +102,7 @@ body ul {
 	display: none;
 }
 .fix-min-width {
-	min-width: 1160px;
+	min-width: 1200px;
 }
 .text {
 	margin: 0;
@@ -831,6 +832,7 @@ body ul {
 ============================================================*/
 .modal {
 	position: fixed;
+	display: none;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -862,18 +864,12 @@ body ul {
 .modal-close:active {
 	opacity: 0.3;
 }
-.modal-show {
-	display: flex;
-}
-.modal-error {
-	animation-name: shake;
-	animation-duration: 0.6s;
-}
 
 /*** Модальная карта
 ========================*/
 .modal-map {
 	position: relative;
+	display: none;
 	width: 960px;
 	height: 559px;
 	background-color: #ffffff;
@@ -891,12 +887,17 @@ body ul {
 ========================*/
 .modal-form {
 	position: relative;
+	display: none;
 	min-width: 760px;
 	padding: 93px 100px 75px;
 	background-color: #ffffff;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	animation-name: modal-show;
 	animation-duration: 0.8s;
+}
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }
 .modal-label {
 	color: #000000;
@@ -955,7 +956,9 @@ body ul {
 .modal-input:invalid:focus {
 	background-color: rgba(237, 181, 181, 0.5);
 }
-
+.modal-show {
+	display: flex;
+}
 /*** Страница каталога
 ============================================================*/
 .catalog-content .title {
@@ -1037,6 +1040,7 @@ body ul {
 }
 .filter-form {
 	flex-direction: column;
+	padding-left: 20px;
 	margin-left: auto;
 }
 .filter-form .button {
@@ -1214,7 +1218,7 @@ body ul {
 .sort-wrap {
 	margin-bottom: 25px;
 	background-color: #efefef;
-	min-width: 890px;
+	min-width: 910px;
 }
 .products-sort {
 	align-items: baseline;

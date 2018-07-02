@@ -26,10 +26,6 @@ var activeSlideServices = sliderServices.querySelector(".main-services-info.acti
 var btnsServices = sliderServices.querySelectorAll(".services-btn");
 var activeBtnServices = sliderServices.querySelector(".selected");
 
-/*var btnsServices1 = sliderServices.querySelector(".services-btn-1");
-var btnsServices2 = sliderServices.querySelector(".services-btn-2");
-var btnsServices3 = sliderServices.querySelector(".services-btn-3");*/
-
 try {
 	storageName = localStorage.getItem("name");
 	storageEmail = localStorage.getItem("email");
