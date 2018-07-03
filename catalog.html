@@ -8,89 +8,91 @@
 </head>
 <body>
 	<header class="main-header container">
-		<div class="logo">
-			<a href="index.html">
-				<svg width="164" height="36">
-					<use xlink:href="#logo"/>
-				</svg>
-			</a>
-		</div>
-		<div class="header-row flex-container">
-			<form class="search flex-container" action="http://echo.htmlacademy.ru" method="get">
-				<input class="search-input" id="search" type="search"  name="search" placeholder="Поиск по сайту">
-				<button class="search-button">Найти</button>
-				<label class="search-input-label"></label>
-			</form>
-			<ul class="action-list flex-container">
-				<li class="action-item">
-					<ul class="action-person-list">	
-						<li class="action-person-item">
-							<a href="#">
-								<svg class="action-icon" width="13" height="12">
-									<use xlink:href="#user"/>
-								</svg>
-								Валентин Петухов
-							</a>
-						</li>
-						<li class="action-person-item"><a href="#">Выйти</a></li>
-					</ul>
-				</li>
-				<li class="action-item">
-					<a href="#">
-						<svg class="action-icon" width="10" height="10">
-							<use xlink:href="#compare"/>
-						</svg>
-						Сравнить
-					</a>
-				</li>
-				<li class="action-item">
-					<a href="#">
-						<svg class="action-icon" width="12" height="12">
-							<use xlink:href="#cart"/>
-						</svg>
-						Корзина
-					</a>
-				</li>
-			</ul>
-		</div>
-		<nav class="header-nav flex-container">
-			<div class="header-catalog">
-				<a href="catalog.html" class="header-catalog-title">
-					Каталог товаров
-					<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16" alt="Все товары">
+		<div class="header-background">
+			<div class="logo">
+				<a href="index.html">
+					<svg width="164" height="36">
+						<use xlink:href="#logo"/>
+					</svg>
 				</a>
-				<ul class="dropdown flex-container">
-					<li class="dropdown-item">
-						<ul class="header-catalog-list">
-							<li class="header-catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
-							<li class="header-catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
-							<li class="header-catalog-item"><a href="catalog.html">Экшн-камеры</a></li>
+			</div>
+			<div class="header-row flex-container">
+				<form class="search flex-container" action="http://echo.htmlacademy.ru" method="get">
+					<input class="search-input" id="search" type="search"  name="search" placeholder="Поиск по сайту">
+					<button class="search-button">Найти</button>
+					<label class="search-input-label"></label>
+				</form>
+				<ul class="action-list flex-container">
+					<li class="action-item">
+						<ul class="action-person-list">	
+							<li class="action-person-item">
+								<a href="#">
+									<svg class="action-icon" width="13" height="12">
+										<use xlink:href="#user"/>
+									</svg>
+									Валентин Петухов
+								</a>
+							</li>
+							<li class="action-person-item"><a href="#">Выйти</a></li>
 						</ul>
 					</li>
-					<li class="dropdown-item">	
-						<ul class="header-catalog-list">
-							<li class="header-catalog-item"><a href="catalog.html">Фитнес-браслеты</a></li>
-							<li class="header-catalog-item"><a href="catalog.html">Умные часы</a></li>
-						</ul>
+					<li class="action-item">
+						<a href="#">
+							<svg class="action-icon" width="10" height="10">
+								<use xlink:href="#compare"/>
+							</svg>
+							Сравнить
+						</a>
 					</li>
-					<li class="dropdown-item">
-						<ul class="header-catalog-list">
-							<li class="header-catalog-item"><a href="catalog.html">Квадрокоптеры</a></li>
-						</ul>
+					<li class="action-item">
+						<a href="#">
+							<svg class="action-icon" width="12" height="12">
+								<use xlink:href="#cart"/>
+							</svg>
+							Корзина
+						</a>
 					</li>
 				</ul>
 			</div>
-			<div class="header-features">
-				<ul class="header-features-list flex-container">
-					<li class="header-features-item"><a href="#">Доставка</a></li>
-					<li class="header-features-item"><a href="#">Гарантия</a></li>
-					<li class="header-features-item"><a href="#">Контакты</a></li>
-				</ul>
-			</div>
-		</nav>
+			<nav class="header-nav flex-container">
+				<div class="header-catalog">
+					<a href="catalog.html" class="header-catalog-title">
+						Каталог товаров
+						<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16" alt="Все товары">
+					</a>
+					<ul class="dropdown flex-container">
+						<li class="dropdown-item">
+							<ul class="header-catalog-list">
+								<li class="header-catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
+								<li class="header-catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
+								<li class="header-catalog-item"><a href="catalog.html">Экшн-камеры</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-item">	
+							<ul class="header-catalog-list">
+								<li class="header-catalog-item"><a href="catalog.html">Фитнес-браслеты</a></li>
+								<li class="header-catalog-item"><a href="catalog.html">Умные часы</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-item">
+							<ul class="header-catalog-list">
+								<li class="header-catalog-item"><a href="catalog.html">Квадрокоптеры</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="header-features">
+					<ul class="header-features-list flex-container">
+						<li class="header-features-item"><a href="#">Доставка</a></li>
+						<li class="header-features-item"><a href="#">Гарантия</a></li>
+						<li class="header-features-item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</header>
 	<main class="catalog-content">
-		<div class="breadcrumbs-wrap container flex-container">
+		<div class="catalog-header container">
 			<h1 class="title">Моноподы для селфи</h1>
 			<ul class="breadcrumbs flex-container">
 				<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
@@ -104,7 +106,7 @@
 				<div class="filter-title-wrap catalog-header-row">
 					<p class="catalog-subtitle filter-wrapper">Фильтр:</p>
 				</div>
-				<form class="filter-form flex-container filter-wrapper" method="post" action="https://echo.htmlacademy.ru">
+				<form class="filter-form filter-wrapper" method="post" action="https://echo.htmlacademy.ru">
 					<fieldset class="filter-area">
 						<legend class="filter-area-title">Стоимость</legend>
 						<div class="range">
@@ -183,8 +185,12 @@
 							<li class="products-sort-item"><a href="#">По цене</a></li>
 							<li class="products-sort-item"><a href="#">По типу</a></li>
 							<li class="products-sort-item"><a href="#">По популярности</a></li>
-							<li class="products-sort-item sort-type"><a class="sort-up" href="#">По возраст</a></li>
-							<li class="products-sort-item sort-type"><a class="sort-down sort-active" href="#">По убыв</a></li>
+
+
+							<li class="products-sort-item sort-type">
+								<a class="sort-up" href="#">По возраст</a>
+								<a class="sort-down sort-active" href="#">По убыв</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -333,5 +339,6 @@
 			<path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
 		</symbol>
 	</svg>
+<script src="js/range.js"></script>
 </body>
 </html>
