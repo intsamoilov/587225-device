@@ -1179,7 +1179,7 @@ body ul {
 }
 
 .catalog-header {
-	padding: 40px 60px 45px 60px;
+	padding: 40px 80px 45px 80px;
 	width: 1040px;
 }
 
@@ -1192,9 +1192,9 @@ body ul {
 
 .catalog-filter {
 	background-color: #efefef;
-	width: 330px;
-	margin-left: auto;
+	width: 350px;
 	flex-grow: 1;
+	margin-left: auto;
 }
 
 .catalog-header-row {
@@ -1214,7 +1214,7 @@ body ul {
 .filter-wrapper {
 	width: 200px;
 	padding-right: 70px;
-
+	padding-left: 80px;
 }
 
 .filter-title-wrap {
@@ -1225,7 +1225,6 @@ body ul {
 }
 
 .filter-form {
-	padding-left: 20px;
 	margin-left: auto;
 }
 
@@ -1430,13 +1429,14 @@ body ul {
 
 .products {
 	flex-direction: column;
-	width: 830px;
+	width: 850px;
 	flex-grow: 1;
 	margin-right: auto;
 }
 
 .sort-wrap {
 	margin-bottom: 25px;
+	min-width: 850px;
 	background-color: #efefef;
 }
 
@@ -1633,7 +1633,7 @@ body ul {
 }
 
 .pagination-list {
-	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
 	width: 760px;
 	min-height: 70px;
@@ -1645,23 +1645,22 @@ body ul {
 }
 
 .pagination-item:first-child {
-	margin-right: 175px;
+	margin: 0 auto 0 0;
 }
 
 .pagination-item:last-child {
-	margin-left: 175px;
+	margin: 0 0 0 auto;
 }
 
 .pagination-btn {
-	display: block;
-	text-align: center;
-	padding-top: 20px;
+	justify-content: center;
+	align-items: center;
 	width: 130px;
-	min-height: 50px;
+	min-height: 70px;
 }
 
-.pagination-btn:first-child {
-	margin-right: auto;
+.pagination-link {
+	margin: 0 15px;
 }
 
 .pagination-item a {
