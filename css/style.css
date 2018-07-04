@@ -360,6 +360,10 @@ body ul {
 	margin-right: 20px;
 }
 
+.action-person-item:last-child {
+	margin-right: 0px;
+}
+
 .action-icon {
 	margin-right: 7px;
 }
@@ -521,6 +525,8 @@ body ul {
 
 .footer-contacts {
 	width: 300px;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 .footer-contacts:last-child {
