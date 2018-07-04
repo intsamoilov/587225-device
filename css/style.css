@@ -89,7 +89,7 @@ body ul {
 	padding: 0;
 	color: #000000;
 	font-size: 47px;
-	line-height: 48px;
+	line-height: 1;
 	letter-spacing: 0.45px;
 }
 
@@ -511,14 +511,15 @@ body ul {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 270px;
-	margin-left: 375px;
+	margin-left: 365px;
 	margin-right: auto;
 }
 
 .social {
 	width: 32px;
 	height: 32px;
-	margin-right: 23px;
+	margin-right: 11px;
+	margin-left: 11px;
 	margin-bottom: 9px;
 	opacity: 0.3;
 }
@@ -1156,12 +1157,12 @@ body ul {
 ============================================================*/
 
 .catalog-header {
-	padding: 35px 80px 45px 80px;
+	padding: 40px 80px 45px 80px;
 	width: 1040px;
 }
 
 .catalog-header .title {
-	margin-bottom: 25px;
+	margin-bottom: 22px;
 }
 
 .breadcrumbs {
@@ -1366,7 +1367,7 @@ body ul {
 }
 
 .filter-item:first-child {
-	margin-top: 15px;
+	margin-top: 18px;
 }
 
 .filter-label {
@@ -1380,7 +1381,7 @@ body ul {
 .filter-checkbox + .checkbox-label::before {
 	content: "";
 	position: absolute;
-	top: 10px;
+	top: calc(25%);
 	left: -25px;
 	width: 24px;
 	height: 24px;
@@ -1472,6 +1473,7 @@ body ul {
 }
 
 .products-sort-list {
+	flex-wrap: wrap;
 	width: 560px;
 	line-height: 18px;
 	list-style: none;
@@ -1676,11 +1678,11 @@ body ul {
 }
 
 .pagination-btn {
-	justify-content: center;
-	align-items: center;
-	padding: 0 20px;
-	min-width: 90px;
-	min-height: 70px;
+	display: block;
+	width: 130px;
+	min-height: 48px;
+	padding-top: 22px;
+	text-align: center;
 }
 
 .pagination-link {
