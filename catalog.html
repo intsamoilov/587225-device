@@ -18,9 +18,9 @@
 			</div>
 			<div class="header-row flex-container">
 				<form class="search flex-container" action="http://echo.htmlacademy.ru" method="get">
+					<label class="visually-hidden" for="search">Поиск по сайту</label>
 					<input class="search-input" id="search" type="search"  name="search" placeholder="Поиск по сайту">
 					<button class="search-button">Найти</button>
-					<label class="search-input-label"></label>
 				</form>
 				<ul class="action-list flex-container">
 					<li class="action-item">
@@ -58,7 +58,6 @@
 				<div class="header-catalog">
 					<a href="catalog.html" class="header-catalog-title">
 						Каталог товаров
-						<img class="icon-plus" src="img/svg/plus.svg" width="16" height="16" alt="Все товары">
 					</a>
 					<ul class="dropdown flex-container">
 						<li class="dropdown-item">
@@ -97,7 +96,7 @@
 			<ul class="breadcrumbs flex-container">
 				<li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
 				<li class="breadcrumbs-item"><a href="catalog.html">Каталог товаров</a></li>
-				<li class="breadcrumbs-item non-link"><a>Моноподы для селфи</a></li>
+				<li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
 			</ul>
 		</div>
 		<div class="catalog-wrap flex-container">
@@ -115,21 +114,17 @@
 									<div class="scale">
 										<div class="bar"></div>
 									</div>
-									<div class="toggle toggle-min"></div>
-									<div class="toggle toggle-max"></div>
-								</div>
-								<div class="price-controls">
-									<div class="range-control range-control-min">
-										<label class="range-control-label">
-											от 
-											<input class="range-control-value" type="number" name="min-price" value="0" min="0" max="10000">
-										</label>
+									<div class="toggle toggle-min">
+										<div class="range-wrap range-min">
+											<label class="range-label" for="min-price">от </label>
+											<input class="range-value" id="min-price" type="number" name="min-price" value="0" min="0" max="10000">
+										</div>
 									</div>
-									<div class="range-control range-control-max">
-										<label class="range-control-label">
-											до 
-											<input class="range-control-value" type="number" name="max-price" value="5000" min="0" max="10000">
-										</label>
+									<div class="toggle toggle-max">
+										<div class="range-wrap range-max">
+											<label class="range-label" for="max-price">до </label>
+											<input class="range-value" id="max-price" type="number" name="max-price" value="5000" min="0" max="10000">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -297,13 +292,13 @@
 				</ul>
 			</div>
 			<div class="footer-middle flex-container">
-				<p>г. Москва, ул. Строителей, 15</p>
+				<p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
 				<ul class="footer-features-list flex-container">
 					<li class="footer-features-item"><a href="#">Доставка</a></li>
 					<li class="footer-features-item"><a href="#">Гарантия</a></li>
 					<li class="footer-features-item"><a href="#">Контакты</a></li>
 				</ul>
-				<p>Тел.: +7 (495) 495-95-95</p>
+				<p class="footer-contacts">Тел.: +7 (495) 495-95-95</p>
 			</div>
 			<div class="footer-bottom flex-container">
 				<div class="footer-socials flex-container">
