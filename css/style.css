@@ -787,14 +787,14 @@ body ul {
 
 .category-items-list {
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	list-style: none;
-	margin-right: -15px;
-	margin-left: -15px;
+	margin-right: -20px;
+	margin-left: -20px;
 }
 
 .category-item {
-	margin: 15px;
+	margin: 15px 20px;
 }
 
 .category-item-background {
