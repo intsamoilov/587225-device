@@ -358,6 +358,7 @@ body ul {
 .action-person-item {
 	display: inline-block;
 	margin-right: 20px;
+	vertical-align: bottom;
 }
 
 .action-person-item:last-child {
@@ -627,7 +628,7 @@ body ul {
 ========================*/
 
 .main-slider {
-	margin-bottom: 110px;
+	margin-bottom: 95px;
 }
 
 .slider-background {
@@ -781,12 +782,19 @@ body ul {
 ========================*/
 
 .main-categories {
-	margin-bottom: 80px;
+	margin-bottom: 65px;
 }
 
 .category-items-list {
+	flex-wrap: wrap;
 	justify-content: space-between;
 	list-style: none;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.category-item {
+	margin: 15px;
 }
 
 .category-item-background {
@@ -800,11 +808,6 @@ body ul {
 	height: inherit;
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-.category-item:nth-child(2) .category-item-background {
-	height: 125px;
-	padding-top: 35px;
 }
 
 .category-item-title {
